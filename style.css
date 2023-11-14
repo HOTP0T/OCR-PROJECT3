@@ -316,17 +316,13 @@ footer {
   width: 100%;
 }
 
-.footer-icon-div {
-  background-color: #353535;
-}
-
 .fa-utensils,
 .fa-handshake-angle {
   color: white;
   background-color: #353535;
 }
 
-@media (min-width: 421px) {
+@media (min-width: 421px) and (max-width: 1024px) {
   * {
     min-width: 421px;
   }

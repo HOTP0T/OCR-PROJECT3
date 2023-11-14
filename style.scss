@@ -320,7 +320,7 @@ footer {
 }
 
 .footer-icon-div {
-    background-color: #353535;
+
 }
 
 .fa-utensils,
@@ -329,7 +329,8 @@ footer {
     background-color: #353535;
 }
 
-@media (min-width: 421px) {
+//tablette
+@media (min-width: 421px) and (max-width: 1024px){
     * {
     min-width: 421px;
     }
@@ -345,3 +346,10 @@ Chrome et Firefox.
 */
 
 }
+
+//desktop
+@media (min-width: 1025px) {
+    
+}
+
+// TODO see if need a minwidth 1441 querie for white margin on the sides
