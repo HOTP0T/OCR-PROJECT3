@@ -2,7 +2,7 @@
 /* utilisation des mixins et variables mais pas des imbrications sass */
 /* GENERAL */
 * {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-sizing: border-box;
   max-width: 420px;
 }
@@ -128,7 +128,7 @@ header {
   background: var(--Button-Gradient, linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%));
   border-radius: 25px;
   margin-top: 30px;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
 }
 
@@ -219,7 +219,7 @@ legend {
   background-color: #F6F6F6;
 }
 
-.restaurant-card-container {
+.-card-container {
   padding-bottom: 50px;
 }
 
@@ -314,6 +314,10 @@ footer {
   color: white;
   background-color: #353535;
   width: 100%;
+}
+
+.icon-div-footer {
+  background-color: #353535;
 }
 
 .fa-utensils,
