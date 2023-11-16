@@ -141,11 +141,6 @@ header {
     border: none;
 }
 
-.pink-button.secondary {
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-
 // main section
 .main-sections {
     width: 100%;
@@ -296,6 +291,12 @@ legend {
 
 // SECONDARY PAGES //
 
+.secondary-page-main { //trying to have img overlap main div section
+    position: relative;
+    width: 100%;
+    background-color: $secondary-color;
+}
+
 .restaurant-title-div {
     display: flex;
     flex-direction: row;
@@ -308,13 +309,17 @@ i.secondary-page-heart {
     height: 22px;
     width: 22px;
     font-size: 22px;
+    background-color: $secondary-color;
 }
 
 .top-image {
     height: 275px;
     width: 100%;
     object-fit: cover;
-    z-index: 1;
+}
+
+.restaurant-title-div {
+    background-color: $secondary-color;
 }
 
 .restaurant-dish-title {
@@ -324,18 +329,47 @@ i.secondary-page-heart {
 
 .restaurant-dish-title {
     font-size: 28px;
+    background-color: $secondary-color;
 }
 
 .restaurant-dish-list {
     margin-top: 60px;
     padding-right: 22px;
     padding-left: 22px;
+    background-color: $secondary-color;
+}
+
+.dish-cards {
+    background-color: $secondary-color;
+}
+
+.dish-category {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    background-color: $secondary-color;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.green-bar {
+    height: 5px;
+    width: 20%;
+    background-color: #99E2D0;
+    margin-bottom: 25px;
+
 }
 
 .restaurant-dish {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    z-index: 4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: $secondary-color;
+    position: relative;
+    bottom: 50px;
 }
 
 .dish1,
@@ -349,7 +383,26 @@ i.secondary-page-heart {
     border-radius: 20px;
     margin-bottom: 25px;
     height: 75px;
-    background-color: $secondary-color;
+    background-color: $primary-color;
+}
+
+.dish-card-content,
+.dish-name,
+.dish-card-subcontent,
+.dish-price {
+    background-color: $primary-color;
+}
+
+.dish-card-subcontent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 70px;
+    flex-wrap: nowrap;
+}
+
+.pink-button.secondary-button {
+    margin-bottom: 40px;
 }
 
 // FOOTER
