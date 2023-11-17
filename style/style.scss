@@ -496,7 +496,6 @@ footer {
 .footer-link {
     color: white;
     background-color: #353535;
-    width: 100%;
 }
 
 .icon-div-footer {
@@ -509,14 +508,157 @@ footer {
     width: 16px;
 }
 
-
-
-//tablette
-@media (min-width: 421px) {
+//desktop and tablette 421px to 1440px
+@media (min-width: 421px) and (max-width: 1800px) {
     * {
-    min-width: 421px;
+    max-width: 1800px;
     }
 
+    body {
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    a {
+        background-color: $secondary-color;
+    }
+
+    .header-logo-div {
+        width: 100%;
+    }
+
+    .pink-button {
+        width: 20%;
+    }
+
+    .fonctionnement-title {
+        margin-left: 30px;
+    }
+
+    .fonctionnement-cards {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fonctionnement1,
+    .fonctionnement2,
+    .fonctionnement3 {
+        width: 30%;
+    }
+
+    .restaurant-title {
+        padding-left: 50px;
+    }
+
+    .restaurant-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .restaurant-card {
+        width: 575px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+    .icon-div-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    a.footer-link.with-icon {
+        
+    }
+
+// big devices over 1441px
+// @media (min-width:1441px ) {
+//     * {
+//         max-width: 1800px;
+//         }
+
+        
+//         body {
+//             justify-content: center;
+//             margin: auto;
+//             width: 100%;
+//         }
+    
+//         a {
+//             background-color: $secondary-color;
+//         }
+    
+//         .header-logo-div {
+//             width: 100%;
+//         }
+    
+//         .pink-button {
+//             width: 20%;
+//         }
+    
+//         .fonctionnement-title {
+//             margin-left: 30px;
+//         }
+    
+//         .fonctionnement-cards {
+//             display: flex;
+//             justify-content: space-evenly;
+//         }
+    
+//         .fonctionnement1,
+//         .fonctionnement2,
+//         .fonctionnement3 {
+//             width: 30%;
+//         }
+    
+//         .restaurant-title {
+//             padding-left: 50px;
+//         }
+    
+//         .restaurant-card-container {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: space-evenly;
+//             flex-wrap: wrap;
+//         }
+    
+//         .restaurant-card {
+//             width: 550px;
+//         }
+    
+//         footer {
+//             display: flex;
+//             flex-direction: row-reverse;
+//         }
+    
+//         .footer-links {
+//             flex-direction: row;
+//             margin-top: 15px;
+//         }
+    
+//         .icon-div-footer {
+//             display: flex;
+//             flex-direction: row;
+//             flex-wrap: nowrap;
+//             gap: 10px;
+//         }
+    
+//         a.footer-link.with-icon {
+            
+//         }
+//     }
 // TODO desktop version/tablette (same design)
 // TODO mainly switch from columns to rows
 
