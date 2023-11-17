@@ -436,6 +436,14 @@ i.secondary-page-heart {
   font-weight: 700;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #F6F6F6;
+}
+
 .pink-button.secondary-button {
   margin-bottom: 35px;
   margin-top: -5px;
@@ -529,6 +537,21 @@ footer {
   }
   .restaurant-card {
     width: 575px;
+  }
+  .secondary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .secondary-page-main.main-container {
+    background-color: white;
+  }
+  .main-sections.restaurant-dish {
+    width: 80%;
+  }
+  .fonctionnement-cards.dish-cards {
+    flex-direction: column;
   }
   footer {
     display: flex;
