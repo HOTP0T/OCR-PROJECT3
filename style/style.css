@@ -31,9 +31,22 @@ a {
 h1 {
   font-family: Roboto;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   color: black;
+}
+
+h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.decouvrez {
+  color: var(--Grey, #353535);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 header {
@@ -61,9 +74,7 @@ header {
   color: var(--Black, #101010);
   font-family: Shrikhand;
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .logo-img-header {
@@ -90,9 +101,7 @@ header {
 .location-name {
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
 .fa-solid.fa-location-dot {
@@ -130,6 +139,11 @@ header {
   margin-top: 30px;
   color: rgb(255, 255, 255);
   border: none;
+  /* Button typo */
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--White, #FFF);
 }
 
 .main-sections {
@@ -140,7 +154,6 @@ header {
 .fonctionnement-title {
   font-family: Roboto;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   color: black;
   margin-bottom: 25px;
@@ -169,6 +182,9 @@ header {
 .fonctionnement-card-content {
   margin-left: 40px;
   background-color: #F6F6F6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 span {
@@ -198,7 +214,6 @@ legend {
   color: white;
   font-family: Roboto;
   font-size: 14.182px;
-  font-style: normal;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -253,6 +268,9 @@ legend {
   background-color: #99E2D0;
   color: #008766;
   border-radius: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .restaurant-card-img {
@@ -272,13 +290,18 @@ legend {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: lighter;
 }
 
 .homepage-heart {
   position: relative;
-  bottom: 20px;
+  bottom: 10px;
   font-size: 22px;
   right: 5px;
+  font-weight: 100;
 }
 
 .secondary-page-main {
@@ -303,7 +326,7 @@ i.secondary-page-heart {
 }
 
 .top-image {
-  height: 275px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
 }
@@ -316,9 +339,7 @@ i.secondary-page-heart {
   color: var(--Black, #101010);
   font-family: Shrikhand;
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .restaurant-dish-title {
@@ -344,10 +365,7 @@ i.secondary-page-heart {
   color: #000;
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 100;
-  line-height: normal;
-  text-transform: uppercase;
 }
 
 .green-bar {
@@ -362,7 +380,7 @@ i.secondary-page-heart {
   border-top-right-radius: 20px;
   background-color: #F6F6F6;
   position: relative;
-  bottom: 50px;
+  bottom: 15px;
 }
 
 .dish1,
@@ -377,6 +395,7 @@ i.secondary-page-heart {
   margin-bottom: 25px;
   height: 75px;
   background-color: rgb(255, 255, 255);
+  width: 100%;
 }
 
 .dish-card-content,
@@ -386,16 +405,43 @@ i.secondary-page-heart {
   background-color: rgb(255, 255, 255);
 }
 
+.dish-card-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: -20px;
+}
+
+.dish-name {
+  color: #353535;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.dish-spec {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-weight: 300;
+}
+
 .dish-card-subcontent {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  gap: 70px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+
+.dish-price {
+  color: #353535;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-weight: 700;
 }
 
 .pink-button.secondary-button {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  margin-top: -5px;
 }
 
 footer {
@@ -403,14 +449,16 @@ footer {
   gap: 16px;
   background-color: #353535;
   width: 100%;
+  color: var(--White, #FFF);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .footer-title {
   font-family: Shrikhand;
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   color: white;
   background-color: #353535;
 }
