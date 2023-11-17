@@ -358,6 +358,10 @@ i.secondary-page-heart {
   background-color: #F6F6F6;
 }
 
+.fonctionnement-card-content.sec {
+  margin-left: 10px;
+}
+
 .dish-category {
   margin-top: 25px;
   margin-bottom: 12px;
@@ -405,12 +409,6 @@ i.secondary-page-heart {
   background-color: rgb(255, 255, 255);
 }
 
-.dish-card-content {
-  display: flex;
-  flex-direction: column;
-  margin-right: -20px;
-}
-
 .dish-name {
   color: #353535;
   font-family: Roboto;
@@ -428,7 +426,6 @@ i.secondary-page-heart {
 .dish-card-subcontent {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .dish-price {
@@ -492,7 +489,7 @@ footer {
   width: 16px;
 }
 
-@media (min-width: 421px) and (max-width: 1024px) {
+@media (min-width: 421px) {
   * {
     min-width: 421px;
   }

@@ -368,6 +368,11 @@ i.secondary-page-heart {
     background-color: $secondary-color;
 }
 
+.fonctionnement-card-content.sec {
+    margin-left: 10px;
+
+}
+
 .dish-category {
     margin-top: 25px;
     margin-bottom: 12px;
@@ -416,12 +421,7 @@ i.secondary-page-heart {
     background-color: $primary-color;
 }
 
-// TODO text div overlaps from card
-.dish-card-content {
-    display: flex;
-    flex-direction: column;
-    margin-right: -20px;
-}
+// TODO check text div overlaps from card and check spacing between price and dish subcontent
 
 .dish-name {
     color: #353535;
@@ -441,7 +441,10 @@ i.secondary-page-heart {
 .dish-card-subcontent {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+.dish-price-container {
+    
 }
 
 .dish-price {
@@ -509,7 +512,7 @@ footer {
 
 
 //tablette
-@media (min-width: 421px) and (max-width: 1024px){
+@media (min-width: 421px) {
     * {
     min-width: 421px;
     }
@@ -525,10 +528,3 @@ Chrome et Firefox.
 */
 
 }
-
-//desktop
-@media (min-width: 1025px) {
-    
-}
-
-// TODO see if need a minwidth 1441 querie for white margin on the sides
