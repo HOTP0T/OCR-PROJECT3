@@ -75,6 +75,7 @@ header {
   font-family: Shrikhand;
   font-size: 30px;
   font-weight: 400;
+  background-color: white;
 }
 
 .logo-img-header {
@@ -510,6 +511,7 @@ footer {
   }
   .header-logo-div {
     width: 100%;
+    background-color: white;
   }
   .pink-button {
     width: 20%;

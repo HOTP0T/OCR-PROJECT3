@@ -91,6 +91,7 @@ header {
 .header-logo-link {
     color: var(--Black, #101010);
     @include logo-typo;
+    background-color: white;
 }
 
 .logo-img-header {
@@ -535,6 +536,7 @@ footer {
 
     .header-logo-div {
         width: 100%;
+        background-color: white;
     }
 
     .pink-button {
