@@ -358,7 +358,6 @@ i.secondary-page-heart {
 
 .dish-cards {
   background-color: #F6F6F6;
-  overflow: hidden;
 }
 
 .fonctionnement-card-content.sec {
@@ -388,7 +387,6 @@ i.secondary-page-heart {
   border-top-right-radius: 20px;
   background-color: #F6F6F6;
   position: relative;
-  bottom: 15px;
   overflow: hidden;
 }
 
@@ -402,7 +400,7 @@ i.secondary-page-heart {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   margin-bottom: 25px;
-  height: 75px;
+  height: 80px;
   background-color: rgb(255, 255, 255);
   width: 100%;
   overflow: hidden;
@@ -467,6 +465,7 @@ footer {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 0px;
 }
 
 .footer-title {
@@ -485,7 +484,7 @@ footer {
 }
 
 .with-icon {
-  padding-left: 13px;
+  padding-left: 10px;
   background-color: #353535;
 }
 
@@ -562,7 +561,6 @@ footer {
   }
   .fonctionnement-cards.dish-cards {
     flex-direction: column;
-    overflow: hidden;
   }
   footer {
     display: flex;
@@ -576,7 +574,6 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 10px;
   }
   /* note du brief creatif :
   ● L’ensemble du site devra être responsive sur mobile, tablette et desktop.
