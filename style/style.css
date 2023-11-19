@@ -353,14 +353,17 @@ i.secondary-page-heart {
   padding-right: 22px;
   padding-left: 22px;
   background-color: #F6F6F6;
+  overflow: hidden;
 }
 
 .dish-cards {
   background-color: #F6F6F6;
+  overflow: hidden;
 }
 
 .fonctionnement-card-content.sec {
   margin-left: 10px;
+  overflow: hidden;
 }
 
 .dish-category {
@@ -386,6 +389,7 @@ i.secondary-page-heart {
   background-color: #F6F6F6;
   position: relative;
   bottom: 15px;
+  overflow: hidden;
 }
 
 .dish1,
@@ -401,6 +405,7 @@ i.secondary-page-heart {
   height: 75px;
   background-color: rgb(255, 255, 255);
   width: 100%;
+  overflow: hidden;
 }
 
 .dish-card-content,
@@ -408,6 +413,7 @@ i.secondary-page-heart {
 .dish-card-subcontent,
 .dish-price {
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
 .dish-name {
@@ -427,6 +433,7 @@ i.secondary-page-heart {
 .dish-card-subcontent {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .dish-price {
@@ -435,6 +442,7 @@ i.secondary-page-heart {
   font-family: Roboto;
   font-size: 15.043px;
   font-weight: 700;
+  overflow: hidden;
 }
 
 .btn-container {
@@ -554,6 +562,7 @@ footer {
   }
   .fonctionnement-cards.dish-cards {
     flex-direction: column;
+    overflow: hidden;
   }
   footer {
     display: flex;

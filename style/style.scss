@@ -363,15 +363,17 @@ i.secondary-page-heart {
     padding-right: 22px;
     padding-left: 22px;
     background-color: $secondary-color;
+    overflow: hidden;
 }
 
 .dish-cards {
     background-color: $secondary-color;
+    overflow: hidden;
 }
 
 .fonctionnement-card-content.sec {
     margin-left: 10px;
-
+    overflow: hidden;
 }
 
 .dish-category {
@@ -398,6 +400,7 @@ i.secondary-page-heart {
     background-color: $secondary-color;
     position: relative;
     bottom: 15px;
+    overflow: hidden;
 }
 
 .dish1,
@@ -413,6 +416,7 @@ i.secondary-page-heart {
     height: 75px;
     background-color: $primary-color;
     width: 100%;
+    overflow: hidden;
 }
 
 .dish-card-content,
@@ -420,6 +424,7 @@ i.secondary-page-heart {
 .dish-card-subcontent,
 .dish-price {
     background-color: $primary-color;
+    overflow: hidden;
 }
 
 // TODO check text div overlaps from card and check spacing between price and dish subcontent
@@ -428,7 +433,6 @@ i.secondary-page-heart {
     color: #353535;
     font-family: Roboto;
     font-size: 15px;
-
     font-weight: 700;
 }
 
@@ -442,11 +446,13 @@ i.secondary-page-heart {
 .dish-card-subcontent {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
-.dish-price-container {
-    
-}
+// .dish-price-container {
+//     overflow: hidden;
+// } 
+// TODO remove if not needed from html class too
 
 .dish-price {
     color: #353535;
@@ -454,6 +460,7 @@ i.secondary-page-heart {
     font-family: Roboto;
     font-size: 15.043px;
     font-weight: 700;
+    overflow: hidden;
 
     // POSITIONING
 
@@ -588,6 +595,7 @@ footer {
 
 .fonctionnement-cards.dish-cards {
     flex-direction: column;
+    overflow: hidden;
 }
 
 // FOOTER
