@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* utilisation des mixins et variables mais pas des imbrications sass */
 /* GENERAL */
 * {
@@ -562,6 +561,9 @@ footer {
   .fonctionnement-cards.dish-cards {
     flex-direction: column;
   }
+  .green-bar {
+    width: 40px;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -575,12 +577,6 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  /* note du brief creatif :
-  ● L’ensemble du site devra être responsive sur mobile, tablette et desktop.
-  ● Les pages devront passer la validation W3C en HTML et CSS sans erreur.
-  ● Le site doit être parfaitement compatible avec les dernières versions desktop de
-  Chrome et Firefox.
-  */
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -447,11 +447,6 @@ i.secondary-page-heart {
     overflow: hidden;
 }
 
-// .dish-price-container {
-//     overflow: hidden;
-// } 
-// TODO remove if not needed from html class too
-
 .dish-price {
     color: #353535;
     text-align: center;
@@ -596,6 +591,10 @@ footer {
     flex-direction: column;
 }
 
+.green-bar {
+    width: 40px;
+}
+
 // FOOTER
 
     footer {
@@ -614,90 +613,9 @@ footer {
         flex-wrap: nowrap;
     }
 
-// big devices over 1441px
-// @media (min-width:1441px ) {
-//     * {
-//         max-width: 1800px;
-//         }
-
-        
-//         body {
-//             justify-content: center;
-//             margin: auto;
-//             width: 100%;
-//         }
-    
-//         a {
-//             background-color: $secondary-color;
-//         }
-    
-//         .header-logo-div {
-//             width: 100%;
-//         }
-    
-//         .pink-button {
-//             width: 20%;
-//         }
-    
-//         .fonctionnement-title {
-//             margin-left: 30px;
-//         }
-    
-//         .fonctionnement-cards {
-//             display: flex;
-//             justify-content: space-evenly;
-//         }
-    
-//         .fonctionnement1,
-//         .fonctionnement2,
-//         .fonctionnement3 {
-//             width: 30%;
-//         }
-    
-//         .restaurant-title {
-//             padding-left: 50px;
-//         }
-    
-//         .restaurant-card-container {
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: space-evenly;
-//             flex-wrap: wrap;
-//         }
-    
-//         .restaurant-card {
-//             width: 550px;
-//         }
-    
-//         footer {
-//             display: flex;
-//             flex-direction: row-reverse;
-//         }
-    
-//         .footer-links {
-//             flex-direction: row;
-//             margin-top: 15px;
-//         }
-    
-//         .icon-div-footer {
-//             display: flex;
-//             flex-direction: row;
-//             flex-wrap: nowrap;
-//             gap: 10px;
-//         }
-    
-//         a.footer-link.with-icon {
-            
-//         }
-//     }
-// TODO desktop version/tablette (same design)
-// TODO mainly switch from columns to rows
-
-/* note du brief creatif :
-● L’ensemble du site devra être responsive sur mobile, tablette et desktop.
-● Les pages devront passer la validation W3C en HTML et CSS sans erreur.
-● Le site doit être parfaitement compatible avec les dernières versions desktop de
-Chrome et Firefox.
-*/
-
 }
+
+// TODO add back arrow to secondary pages
+
+// ANIMATIONS
+// https://codepen.io/atoulmet/pen/BazbmZM
