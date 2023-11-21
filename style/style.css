@@ -596,8 +596,12 @@ footer {
     flex-wrap: nowrap;
   }
 }
-.fa-heart {
-  z-index: 1;
+input {
+  display: none;
+}
+
+.secondary-page-heart {
+  cursor: pointer;
 }
 
 .fa-heart {
@@ -605,13 +609,13 @@ footer {
 }
 .fa-heart:hover {
   transform: scale(1.2);
+  opacity: 0.5;
 }
 .fa-heart:active {
   rotate: 360deg;
   transform: scale(1.8);
-}
-.fa-heart:focus {
-  background-color: #9356DC;
+  opacity: 1;
+  color: #ff79da;
 }
 
 /*# sourceMappingURL=style.css.map */

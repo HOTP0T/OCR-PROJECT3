@@ -639,22 +639,31 @@ footer {
 }
 
 // ANIMATIONS
-// https://codepen.io/atoulmet/pen/BazbmZM
 
-.fa-heart {
-    z-index: 1;
+// TODO see if can find solution for fill color on hover and click
+
+input {
+    display: none;
+}
+
+.secondary-page-heart {
+    cursor: pointer;
 }
 
 .fa-heart {
     transition: 0.2s;
+
     &:hover {
 		transform: scale(1.2);
+        opacity: 0.5;
 	}
     &:active {
         rotate: 360deg;
         transform: scale(1.8);
-    }
-    &:focus { // TODO huh??
-        background-color: #9356DC;
+        opacity: 1;
+        // background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);
+        color: #ff79da;
     }
 }
+
+
