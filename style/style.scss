@@ -70,6 +70,10 @@ h2 {
 
 }
 
+.overlap-div {
+    position: relative;
+}
+
 // HEADER
 header {
     width: 100%;
@@ -407,7 +411,7 @@ i.secondary-page-heart {
     border-top-right-radius: 20px;
     background-color: $secondary-color;
     position: relative;
-    overflow: hidden;
+    top: -25px;
 }
 
 .dish1,
@@ -451,9 +455,9 @@ i.secondary-page-heart {
 }
 
 .dish-card-subcontent {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .dish-price {
@@ -462,8 +466,7 @@ i.secondary-page-heart {
     font-family: Roboto;
     font-size: 15.043px;
     font-weight: 700;
-    overflow: hidden;
-
+    
     // POSITIONING
 
 }
@@ -471,6 +474,7 @@ i.secondary-page-heart {
 .btn-container {
     @include centered-flex;
     background-color: $secondary-color;
+    margin-top: 25px;
 }
 
 .pink-button.secondary-button {
