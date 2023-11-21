@@ -580,7 +580,7 @@ footer {
     width: 40px;
   }
   .secondary-button {
-    max-width: 200px;
+    max-width: 185px;
   }
   footer {
     display: flex;
@@ -595,6 +595,23 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+}
+.fa-heart {
+  z-index: 1;
+}
+
+.fa-heart {
+  transition: 0.2s;
+}
+.fa-heart:hover {
+  transform: scale(1.2);
+}
+.fa-heart:active {
+  rotate: 360deg;
+  transform: scale(1.8);
+}
+.fa-heart:focus {
+  background-color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

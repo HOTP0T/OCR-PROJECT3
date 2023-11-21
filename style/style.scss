@@ -615,7 +615,7 @@ footer {
 }
 
 .secondary-button {
-    max-width: 200px;
+    max-width: 185px;
 }
 
 // FOOTER
@@ -641,3 +641,20 @@ footer {
 // ANIMATIONS
 // https://codepen.io/atoulmet/pen/BazbmZM
 
+.fa-heart {
+    z-index: 1;
+}
+
+.fa-heart {
+    transition: 0.2s;
+    &:hover {
+		transform: scale(1.2);
+	}
+    &:active {
+        rotate: 360deg;
+        transform: scale(1.8);
+    }
+    &:focus { // TODO huh??
+        background-color: #9356DC;
+    }
+}
