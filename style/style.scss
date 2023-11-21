@@ -326,6 +326,7 @@ legend {
     font-size: 22px;
     right: 5px;
     font-weight: 100;
+    background-color: white;
 }
 
 // SECONDARY PAGES //
@@ -345,6 +346,7 @@ legend {
 }
 
 i.secondary-page-heart {
+    border: none;
     height: 22px;
     width: 22px;
     font-size: 22px;
@@ -642,28 +644,65 @@ footer {
 
 // TODO see if can find solution for fill color on hover and click
 
-input {
+#toggle-heart {
     display: none;
+    // opacity: 0;
+    // width: 0;
+    // height: 0;
 }
 
-.secondary-page-heart {
+.secondary-page-heart,
+.homepage-heart {
     cursor: pointer;
 }
 
+// mettre une position absolute et un z index sur les elements du coeur pur les remplacer par 2 icones
+//
+
 .fa-heart {
     transition: 0.2s;
-
+    // opacity: 0;
+    // background-color: ;
     &:hover {
 		transform: scale(1.2);
         opacity: 0.5;
 	}
-    &:active {
-        rotate: 360deg;
-        transform: scale(1.8);
-        opacity: 1;
-        // background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);
-        color: #ff79da;
-    }
+    // &:active {
+    //     rotate: 360deg;
+    //     transform: scale(1.8);
+    //     opacity: 1;
+    //     // background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);
+    //     color: #ff79da;
+    // }
 }
 
+#toggle-heart:checked + .secondary-page-heart,
+#toggle-heart:checked + .homepage-heart {
+    background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);    
 
+}
+
+#toggle-heart + .secondary-page-heart,
+#toggle-heart + .homepage-heart {
+    background-image: url(../Images_et_textes_Ohmyfood/Status=Default.svg);
+}
+
+#homepage-toggleheart,
+i.homepage-heart {
+    background-color: white;
+}
+
+.secondary-page-heart,
+.homepage-heart {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: contain;
+}
+
+label {
+    background-color: #F6F6F6;
+    @include centered-flex;
+}

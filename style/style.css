@@ -315,6 +315,7 @@ legend {
   font-size: 22px;
   right: 5px;
   font-weight: 100;
+  background-color: white;
 }
 
 .secondary-page-main {
@@ -332,6 +333,7 @@ legend {
 }
 
 i.secondary-page-heart {
+  border: none;
   height: 22px;
   width: 22px;
   font-size: 22px;
@@ -596,11 +598,12 @@ footer {
     flex-wrap: nowrap;
   }
 }
-input {
+#toggle-heart {
   display: none;
 }
 
-.secondary-page-heart {
+.secondary-page-heart,
+.homepage-heart {
   cursor: pointer;
 }
 
@@ -611,11 +614,38 @@ input {
   transform: scale(1.2);
   opacity: 0.5;
 }
-.fa-heart:active {
-  rotate: 360deg;
-  transform: scale(1.8);
-  opacity: 1;
-  color: #ff79da;
+
+#toggle-heart:checked + .secondary-page-heart,
+#toggle-heart:checked + .homepage-heart {
+  background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);
+}
+
+#toggle-heart + .secondary-page-heart,
+#toggle-heart + .homepage-heart {
+  background-image: url(../Images_et_textes_Ohmyfood/Status=Default.svg);
+}
+
+#homepage-toggleheart,
+i.homepage-heart {
+  background-color: white;
+}
+
+.secondary-page-heart,
+.homepage-heart {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
+}
+
+label {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
