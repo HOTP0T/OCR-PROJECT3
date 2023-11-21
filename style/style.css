@@ -570,6 +570,9 @@ footer {
   }
   .main-sections.restaurant-dish {
     width: 80%;
+    position: relative;
+    top: 0px;
+    margin-top: -25px;
   }
   .fonctionnement-cards.dish-cards {
     flex-direction: column;
