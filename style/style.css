@@ -443,9 +443,10 @@ i.secondary-page-heart {
 }
 
 .dish-card-subcontent {
-  width: 100%;
+  width: 70vw;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .dish-price {
@@ -574,6 +575,9 @@ footer {
     position: relative;
     top: 0px;
     margin-top: -25px;
+  }
+  .dish-card-subcontent {
+    max-width: 75vw;
   }
   .fonctionnement-cards.dish-cards {
     flex-direction: column;
