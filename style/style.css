@@ -466,6 +466,11 @@ i.secondary-page-heart {
 .pink-button.secondary-button {
   margin-bottom: 35px;
   margin-top: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50%;
 }
 
 footer {
@@ -559,12 +564,6 @@ footer {
   .restaurant-card {
     width: 575px;
   }
-  .secondary-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
   .secondary-page-main.main-container {
     background-color: white;
   }
@@ -579,6 +578,9 @@ footer {
   }
   .green-bar {
     width: 40px;
+  }
+  .secondary-button {
+    max-width: 200px;
   }
   footer {
     display: flex;

@@ -480,7 +480,8 @@ i.secondary-page-heart {
 .pink-button.secondary-button {
     margin-bottom: 35px;
     margin-top: -5px;
-    
+    @include centered-flex;
+    width: 50%;
 }
 
 // FOOTER
@@ -588,9 +589,7 @@ footer {
     }
 
 // SECONDARY PAGES
-.secondary-button {
-    @include centered-flex;
-}
+
 
 .secondary-page-main.main-container {
     background-color: white;
@@ -615,6 +614,10 @@ footer {
     width: 40px;
 }
 
+.secondary-button {
+    max-width: 200px;
+}
+
 // FOOTER
 
     footer {
@@ -635,7 +638,6 @@ footer {
 
 }
 
-// TODO add back arrow to secondary pages
-
 // ANIMATIONS
 // https://codepen.io/atoulmet/pen/BazbmZM
+
