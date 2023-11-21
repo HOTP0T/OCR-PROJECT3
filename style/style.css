@@ -56,6 +56,15 @@ header {
   align-content: center;
   flex-direction: column;
   padding: 0 0;
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  right: 92.5%;
+  bottom: 20px;
+  font-size: 22px;
+  color: black;
 }
 
 /* HEADER LOGO */

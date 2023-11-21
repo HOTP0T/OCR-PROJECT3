@@ -76,6 +76,15 @@ header {
     @include centered-flex;
     flex-direction: column;
     padding: 0 0;
+    position: relative;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    right: 92.5%;
+    bottom: 20px;
+    font-size: 22px;
+    color: black;
 }
 
 // MAIN COMPONENTS && LANDING PAGE //
