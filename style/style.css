@@ -619,7 +619,10 @@ footer {
     flex-wrap: nowrap;
   }
 }
-#toggle-heart {
+#toggle-heart,
+#toggle-heart2,
+#toggle-heart3,
+#toggle-heart4 {
   display: none;
 }
 
@@ -636,17 +639,28 @@ footer {
   opacity: 0.5;
 }
 
+#toggle-heart:checked + .homepage-heart,
 #toggle-heart:checked + .secondary-page-heart,
-#toggle-heart:checked + .homepage-heart {
+#toggle-heart2:checked + .homepage-heart,
+#toggle-heart2:checked + .secondary-page-heart,
+#toggle-heart3:checked + .homepage-heart,
+#toggle-heart3:checked + .secondary-page-heart,
+#toggle-heart4:checked + .homepage-heart,
+#toggle-heart4:checked + .secondary-page-heart {
   background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);
 }
 
 #toggle-heart + .secondary-page-heart,
-#toggle-heart + .homepage-heart {
+#toggle-heart + .homepage-heart,
+#toggle-heart2 + .secondary-page-heart,
+#toggle-heart2 + .homepage-heart,
+#toggle-heart3 + .secondary-page-heart,
+#toggle-heart3 + .homepage-heart,
+#toggle-heart4 + .secondary-page-heart,
+#toggle-heart4 + .homepage-heart {
   background-image: url(../Images_et_textes_Ohmyfood/Status=Default.svg);
 }
 
-#homepage-toggleheart,
 i.homepage-heart {
   background-color: white;
 }
@@ -662,7 +676,7 @@ i.homepage-heart {
 }
 
 label {
-  background-color: #F6F6F6;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
