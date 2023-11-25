@@ -223,7 +223,7 @@ span {
 }
 
 fieldset{
-    position:relative;
+    position: relative;
     border: none;
 }
 
@@ -430,6 +430,7 @@ i.secondary-page-heart {
     background-color: $primary-color;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .dish-card-content,
@@ -437,6 +438,11 @@ i.secondary-page-heart {
 .dish-card-subcontent,
 .dish-price {
     background-color: $primary-color;
+    overflow: hidden;
+}
+
+.dish-card-content {
+    position: relative;
     overflow: hidden;
 }
 
@@ -470,7 +476,9 @@ i.secondary-page-heart {
     font-size: 15.043px;
     font-weight: 700;
     // POSITIONING
-
+    // position: absolute;
+    // width: 10%;
+    margin-right: 35px;
 }
 
 .btn-container {
@@ -530,6 +538,16 @@ footer {
     color: white;
     background-color: #353535;
     width: 16px;
+}
+
+.fa-circle-check {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    z-index: 2;
+    background-color: #99E2D0;
+    height: 22px;
+    width: 22px;
+    margin-right: 20px;
 }
 
 //desktop and tablette 421px to 1440px
@@ -604,10 +622,6 @@ footer {
     margin-top: -25px;
 }
 
-.dish-card-subcontent {
-    max-width: 75vw;
-}
-
 .fonctionnement-cards.dish-cards {
     flex-direction: column;
 }
@@ -618,6 +632,10 @@ footer {
 
 .secondary-button {
     max-width: 185px;
+}
+
+.dish-card-subcontent {
+    width: 55vw;
 }
 
 // FOOTER
@@ -705,4 +723,73 @@ i.homepage-heart {
 label {
     background-color: #F6F6F6;
     @include centered-flex;
+}
+
+// CARD ANIMATION
+
+.card-animation-div {
+    position: absolute;
+    right: -100%;
+    height : 100%;
+    width : 100%;
+    background: #99E2D0;
+    opacity: 1;
+    width:0;
+    background-image: url(../Images_et_textes_Ohmyfood/Select-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dish1:hover .card-animation-div,
+.dish2:hover .card-animation-div,
+.dish3:hover .card-animation-div {
+    right: 0;
+    height: 120px;
+    width: 20%;
+    animation-name: cardanimation;
+    transition-duration: 1s;
+    z-index: 2;
+}
+
+// @keyframes cardanimation {
+//   from { 
+//     opacity: 0; 
+//   }
+//     10% {
+//     opacity: 0.1;
+//   } 20% {
+//     opacity: 0.2;
+//   } 30% {
+//     opacity: 0.3;
+//   } 40% {
+//     opacity: 0.4;
+//   } 50% {
+//     opacity: 0.5;
+//   } 60% {
+//     opacity: 0.4;
+//   } 70% {
+//     opacity: 0.3;
+//   } 80% {
+//     opacity: 0.2;
+//   } 90% {
+//     opacity: 0.1;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+.fa-circle-check {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    z-index: 2;
+    background-color: #99E2D0;
+    height: 22px;
+    width: 22px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.pink-button:hover {
+    background: var(--Button-Gradient, linear-gradient(0deg, #FF79DA -11.44%, #9356DC 123.93%));
 }
