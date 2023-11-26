@@ -677,24 +677,13 @@ footer {
     cursor: pointer;
 }
 
-// mettre une position absolute et un z index sur les elements du coeur pur les remplacer par 2 icones
-//
+// HEART ANIMATION
 
-.fa-heart {
+label {
     transition: 0.2s;
-    // opacity: 0;
-    // background-color: ;
     &:hover {
-		transform: scale(1.2);
-        opacity: 0.5;
+		transform: scale(1.3);
 	}
-    // &:active {
-    //     rotate: 360deg;
-    //     transform: scale(1.8);
-    //     opacity: 1;
-    //     // background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);
-    //     color: #ff79da;
-    // }
 }
 
 #toggle-heart:checked + .homepage-heart,
