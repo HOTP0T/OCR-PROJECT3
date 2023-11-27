@@ -251,10 +251,6 @@ legend {
   padding-bottom: 50px;
 }
 
-.restaurant-card:first-of-type + .restaurant-card {
-  display: none;
-}
-
 #delice {
   margin-bottom: 0px;
 }
@@ -266,6 +262,8 @@ legend {
   margin-bottom: 20px;
   padding-bottom: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -297,7 +295,8 @@ legend {
 .card-content {
   display: flex;
   flex-direction: column;
-  margin-left: 13px;
+  padding-left: 13px;
+  height: 100%;
 }
 
 .card-subcontent {
@@ -312,9 +311,9 @@ legend {
 
 .homepage-heart {
   position: relative;
-  bottom: 10px;
   font-size: 22px;
-  right: 5px;
+  left: 90%;
+  bottom: 20px;
   font-weight: 100;
   background-color: white;
 }
@@ -632,13 +631,6 @@ footer {
   cursor: pointer;
 }
 
-label {
-  transition: 0.2s;
-}
-label:hover {
-  transform: scale(1.3);
-}
-
 #toggle-heart:checked + .homepage-heart,
 #toggle-heart:checked + .secondary-page-heart,
 #toggle-heart2:checked + .homepage-heart,
@@ -648,6 +640,17 @@ label:hover {
 #toggle-heart4:checked + .homepage-heart,
 #toggle-heart4:checked + .secondary-page-heart {
   background-image: url(../Images_et_textes_Ohmyfood/Status=Liked.svg);
+  transition: 0.2s;
+}
+#toggle-heart:checked + .homepage-heart:hover,
+#toggle-heart:checked + .secondary-page-heart:hover,
+#toggle-heart2:checked + .homepage-heart:hover,
+#toggle-heart2:checked + .secondary-page-heart:hover,
+#toggle-heart3:checked + .homepage-heart:hover,
+#toggle-heart3:checked + .secondary-page-heart:hover,
+#toggle-heart4:checked + .homepage-heart:hover,
+#toggle-heart4:checked + .secondary-page-heart:hover {
+  transform: scale(1.3);
 }
 
 #toggle-heart + .secondary-page-heart,
@@ -659,6 +662,16 @@ label:hover {
 #toggle-heart4 + .secondary-page-heart,
 #toggle-heart4 + .homepage-heart {
   background-image: url(../Images_et_textes_Ohmyfood/Status=Default.svg);
+}
+#toggle-heart + .secondary-page-heart:hover,
+#toggle-heart + .homepage-heart:hover,
+#toggle-heart2 + .secondary-page-heart:hover,
+#toggle-heart2 + .homepage-heart:hover,
+#toggle-heart3 + .secondary-page-heart:hover,
+#toggle-heart3 + .homepage-heart:hover,
+#toggle-heart4 + .secondary-page-heart:hover,
+#toggle-heart4 + .homepage-heart:hover {
+  transform: scale(1.3);
 }
 
 i.homepage-heart {
@@ -677,10 +690,6 @@ i.homepage-heart {
 
 label {
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 
 .card-animation-div {
