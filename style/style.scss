@@ -803,3 +803,13 @@ label {
         background: var(--Button-Gradient, linear-gradient(0deg, #FF79DA -11.44%, #9356DC 123.93%));
 	}
 }
+
+// BACK ARROW ANIMATION
+
+.fa-arrow-left {
+    transition: 0.2s;
+    &:hover {
+        rotate: 360deg;
+		transform: scale(1.3);
+	}
+}
