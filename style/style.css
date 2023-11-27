@@ -717,7 +717,11 @@ label {
   margin-top: 50px;
 }
 
+.pink-button {
+  transition: 0.2s;
+}
 .pink-button:hover {
+  transform: scale(1.3);
   background: var(--Button-Gradient, linear-gradient(0deg, #FF79DA -11.44%, #9356DC 123.93%));
 }
 
