@@ -279,6 +279,7 @@ legend {
     position: relative;
     // display: flex;
     // flex-direction: column;
+    overflow: hidden; // for heart icon to not overflow
 }
 
 .new-sticker {

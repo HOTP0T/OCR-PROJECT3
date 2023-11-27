@@ -266,6 +266,7 @@ legend {
   margin-bottom: 20px;
   padding-bottom: 10px;
   position: relative;
+  overflow: hidden;
 }
 
 .new-sticker {
