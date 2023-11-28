@@ -141,6 +141,7 @@ header {
 }
 
 .pink-button {
+  min-width: 40%;
   width: 66%;
   height: 50px;
   display: flex;
@@ -296,7 +297,8 @@ legend {
   display: flex;
   flex-direction: column;
   padding-left: 13px;
-  height: 100%;
+  height: 25px;
+  margin-top: 15px;
 }
 
 .card-subcontent {
@@ -550,9 +552,6 @@ footer {
     margin: auto;
     width: 100%;
   }
-  a {
-    background-color: #F6F6F6;
-  }
   .header-logo-div {
     width: 100%;
     background-color: white;
@@ -690,6 +689,20 @@ i.homepage-heart {
 
 label {
   background-color: white;
+}
+
+.card-content-index {
+  z-index: 1;
+  max-width: 160px;
+}
+
+svg,
+i {
+  z-index: 2;
+}
+
+.labelsecondary {
+  background-color: #F6F6F6;
 }
 
 .card-animation-div {
