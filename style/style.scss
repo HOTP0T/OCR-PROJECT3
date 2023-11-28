@@ -27,7 +27,7 @@ $highlight-color: #9356DC;
 * {
     background-color: $primary-color;
     box-sizing: border-box;
-    max-width: 420px;
+    max-width: 767px;
 }
 
 body {
@@ -556,12 +556,12 @@ footer {
 }
 
 //desktop and tablette 421px to 1440px
-@media (min-width: 421px) and (max-width: 1800px) {
+@media (min-width: 768px) and (max-width: 2800px) {
 
     // LANDING PAGE and GENERAL
 
     * {
-    max-width: 1800px;
+    max-width: 2800px;
     }
 
     body {

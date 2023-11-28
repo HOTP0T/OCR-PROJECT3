@@ -3,7 +3,7 @@
 * {
   background-color: rgb(255, 255, 255);
   box-sizing: border-box;
-  max-width: 420px;
+  max-width: 767px;
 }
 
 body {
@@ -543,9 +543,9 @@ footer {
   margin-right: 20px;
 }
 
-@media (min-width: 421px) and (max-width: 1800px) {
+@media (min-width: 768px) and (max-width: 2800px) {
   * {
-    max-width: 1800px;
+    max-width: 2800px;
   }
   body {
     justify-content: center;
