@@ -554,20 +554,19 @@ footer {
   .pink-button {
     width: 20%;
   }
-  .fonctionnement-title {
-    margin-left: 30px;
+  .fonctionnement,
+  .restaurant-title {
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .fonctionnement-cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .fonctionnement1,
   .fonctionnement2,
   .fonctionnement3 {
     width: 30%;
-  }
-  .restaurant-title {
-    padding-left: 50px;
   }
   .restaurant-card-container {
     display: flex;
@@ -576,7 +575,7 @@ footer {
     flex-wrap: wrap;
   }
   .restaurant-card {
-    width: 500px;
+    width: 40%;
   }
   .secondary-page-main.main-container {
     background-color: white;
