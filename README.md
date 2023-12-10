@@ -2,4 +2,4 @@
 Dynamisez une page web avec des animations CSS
 Ohmyfood. 
 
-Le fichier .txt correspond aux livrables du projet
+_Le fichier .txt correspond aux livrables du projet_
