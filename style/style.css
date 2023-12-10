@@ -3,7 +3,7 @@
 * {
   background-color: rgb(255, 255, 255);
   box-sizing: border-box;
-  max-width: 767px;
+  max-widh: 768px;
 }
 
 body {
@@ -107,7 +107,7 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   gap: 16px;
 }
 
@@ -118,7 +118,7 @@ header {
 }
 
 .fa-solid.fa-location-dot {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   color: #353535;
 }
 
@@ -127,7 +127,7 @@ header {
 .reservation-exploration h1,
 .reservation-exploration p {
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .reservation-exploration {
@@ -148,7 +148,7 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background: var(--Button-Gradient, linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%));
+  background: var(--Button-Gradient, linear-gradient(0deg, #9356dc -11.44%, #ff79da 123.93%));
   border-radius: 25px;
   margin-top: 30px;
   color: rgb(255, 255, 255);
@@ -157,7 +157,7 @@ header {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
 }
 
 .main-sections {
@@ -190,12 +190,12 @@ header {
   border-radius: 20px;
   margin-bottom: 25px;
   height: 75px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .fonctionnement-card-content {
   margin-left: 40px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -203,11 +203,11 @@ header {
 
 span {
   margin-left: 25px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .fa-store {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 fieldset {
@@ -222,7 +222,7 @@ legend {
   width: 24px;
   height: 24px;
   word-break: break-all;
-  background-color: #9356DC;
+  background-color: #9356dc;
   text-align: center;
   border-radius: 15px;
   color: white;
@@ -245,7 +245,7 @@ legend {
 
 .restaurant-title,
 .restaurant-card-container {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .restaurant-card-container {
@@ -274,7 +274,7 @@ legend {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #008766;
   border-radius: 5px;
   font-family: Roboto;
@@ -319,7 +319,7 @@ legend {
 .secondary-page-main {
   position: relative;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .restaurant-title-div {
@@ -335,7 +335,7 @@ i.secondary-page-heart {
   height: 22px;
   width: 22px;
   font-size: 22px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .top-image {
@@ -345,7 +345,7 @@ i.secondary-page-heart {
 }
 
 .restaurant-title-div {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .restaurant-dish-title {
@@ -357,19 +357,19 @@ i.secondary-page-heart {
 
 .restaurant-dish-title {
   font-size: 28px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .restaurant-dish-list {
   margin-top: 60px;
   padding-right: 22px;
   padding-left: 22px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   overflow: hidden;
 }
 
 .dish-cards {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .fonctionnement-card-content.sec {
@@ -380,7 +380,7 @@ i.secondary-page-heart {
 .dish-category {
   margin-top: 25px;
   margin-bottom: 12px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   color: #000;
   font-family: Roboto;
   font-size: 16px;
@@ -390,14 +390,14 @@ i.secondary-page-heart {
 .green-bar {
   height: 5px;
   width: 20%;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin-bottom: 25px;
 }
 
 .restaurant-dish {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   position: relative;
   top: -25px;
 }
@@ -467,7 +467,7 @@ i.secondary-page-heart {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin-top: 25px;
 }
 
@@ -486,7 +486,7 @@ footer {
   gap: 16px;
   background-color: #353535;
   width: 100%;
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -533,16 +533,13 @@ footer {
   color: rgb(255, 255, 255);
   font-size: 22px;
   z-index: 2;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   height: 22px;
   width: 22px;
   margin-right: 20px;
 }
 
-@media (min-width: 768px) and (max-width: 2800px) {
-  * {
-    max-width: 2800px;
-  }
+@media (min-width: 768px) {
   body {
     justify-content: center;
     margin: auto;
@@ -577,7 +574,7 @@ footer {
     flex-wrap: wrap;
   }
   .restaurant-card {
-    width: 575px;
+    width: 500px;
   }
   .secondary-page-main.main-container {
     background-color: white;
@@ -698,7 +695,7 @@ i {
 }
 
 .labelsecondary {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .card-animation-div {
@@ -706,7 +703,7 @@ i {
   right: -100%;
   height: 100%;
   width: 100%;
-  background: #99E2D0;
+  background: #99e2d0;
   opacity: 1;
   width: 0;
   background-image: url(../Assets/Select-button.svg);
@@ -729,7 +726,7 @@ i {
   color: rgb(255, 255, 255);
   font-size: 22px;
   z-index: 2;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   height: 22px;
   width: 22px;
   margin: 20px;
@@ -741,7 +738,7 @@ i {
 }
 .pink-button:hover {
   transform: scale(1.3);
-  background: var(--Button-Gradient, linear-gradient(0deg, #FF79DA -11.44%, #9356DC 123.93%));
+  background: var(--Button-Gradient, linear-gradient(0deg, #ff79da -11.44%, #9356dc 123.93%));
 }
 
 .fa-arrow-left {

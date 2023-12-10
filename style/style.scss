@@ -4,654 +4,650 @@
 
 // VARIABLES
 $primary-color: rgb(255, 255, 255);
-$secondary-color: #F6F6F6;
-$highlight-color: #9356DC;
+$secondary-color: #f6f6f6;
+$highlight-color: #9356dc;
 //MIXINS
 @mixin cards {
-    background-color: $primary-color;
-    border-radius: 15px;
+  background-color: $primary-color;
+  border-radius: 15px;
 }
 @mixin centered-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 @mixin logo-typo {
-    font-family: Shrikhand;
-    font-size: 30px;
-    font-weight: 400;
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /* GENERAL */
 * {
-    background-color: $primary-color;
-    box-sizing: border-box;
-    max-width: 767px;
+  background-color: $primary-color;
+  box-sizing: border-box;
+  max-widh: 768px;
 }
 
 body {
-    width: 100%;
+  width: 100%;
 }
 
 .main-container {
-    @include centered-flex;
-    flex-direction: column;
+  @include centered-flex;
+  flex-direction: column;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1 {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    color: black;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
 }
 
 h2 {
-    color: #000;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 700;
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .decouvrez {
-    color: var(--Grey, #353535);
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 300;
-
+  color: var(--Grey, #353535);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .overlap-div {
-    position: relative;
+  position: relative;
 }
 
 // HEADER
 header {
-    width: 100%;
-    @include centered-flex;
-    flex-direction: column;
-    padding: 0 0;
-    position: relative;
+  width: 100%;
+  @include centered-flex;
+  flex-direction: column;
+  padding: 0 0;
+  position: relative;
 }
 
 .fa-arrow-left {
-    position: absolute;
-    right: 92.5%;
-    bottom: 20px;
-    font-size: 22px;
-    color: black;
+  position: absolute;
+  right: 92.5%;
+  bottom: 20px;
+  font-size: 22px;
+  color: black;
 }
 
 // MAIN COMPONENTS && LANDING PAGE //
 
 /* HEADER LOGO */
 .header-logo-div {
-    width: 100%;
-    @include centered-flex;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    height: 63px;
+  width: 100%;
+  @include centered-flex;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  height: 63px;
 }
 
 .header-logo-link {
-    color: var(--Black, #101010);
-    @include logo-typo;
-    background-color: white;
+  color: var(--Black, #101010);
+  @include logo-typo;
+  background-color: white;
 }
 
 .logo-img-header {
-    width: 162px;
-    height: 44px;
+  width: 162px;
+  height: 44px;
 }
 
-
-
- /* LOCATION */
+/* LOCATION */
 
 .location {
-    width: 100%;
-    height: 50px;
-
+  width: 100%;
+  height: 50px;
 }
 
 .location,
 .location-name {
-    @include centered-flex;
-    background-color: #EAEAEA;
-    gap: 16px;
+  @include centered-flex;
+  background-color: #eaeaea;
+  gap: 16px;
 }
 
 .location-name {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .fa-solid.fa-location-dot {
-    background-color: #EAEAEA;
-    color: #353535;
+  background-color: #eaeaea;
+  color: #353535;
 }
 
 /* RESERVATION-EXPLORATION */
 .reservation-exploration,
 .reservation-exploration h1,
 .reservation-exploration p {
-    text-align: center;
-    background-color: $secondary-color;
+  text-align: center;
+  background-color: $secondary-color;
 }
 .reservation-exploration {
-    width: 100%;
-    @include centered-flex;
-    flex-direction: column;
-    padding: 30px 0px;
+  width: 100%;
+  @include centered-flex;
+  flex-direction: column;
+  padding: 30px 0px;
 }
 
 .pink-button {
-    min-width: 40%;
-    width: 66%;
-    height: 50px;
-    @include centered-flex;
-    background: var(--Button-Gradient, linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%));
-    border-radius: 25px;
-    margin-top: 30px;
-    color: $primary-color;
-    border: none;
+  min-width: 40%;
+  width: 66%;
+  height: 50px;
+  @include centered-flex;
+  background: var(
+    --Button-Gradient,
+    linear-gradient(0deg, #9356dc -11.44%, #ff79da 123.93%)
+  );
+  border-radius: 25px;
+  margin-top: 30px;
+  color: $primary-color;
+  border: none;
 
-    /* Button typo */
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;    
-    color: var(--White, #FFF);
+  /* Button typo */
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--White, #fff);
 }
 
 // main section
 .main-sections {
-    width: 100%;
+  width: 100%;
 }
 
 /* FONCTIONNEMENT */
 .fonctionnement-title {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 25px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 25px;
 }
 
 .fonctionnement {
-    margin-top: 60px;
-    padding-right: 22px;
-    padding-left: 22px;
+  margin-top: 60px;
+  padding-right: 22px;
+  padding-left: 22px;
 }
 
 .fonctionnement1,
 .fonctionnement2,
 .fonctionnement3 {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 16px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    margin-bottom: 25px;
-    height: 75px;
-    background-color: $secondary-color;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  height: 75px;
+  background-color: $secondary-color;
 }
 
 .fonctionnement-card-content {
-    margin-left: 40px;
-    background-color: $secondary-color;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
+  margin-left: 40px;
+  background-color: $secondary-color;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 span {
-    margin-left: 25px;
-    background-color: $secondary-color;
+  margin-left: 25px;
+  background-color: $secondary-color;
 }
 
 .fa-store {
-    color: $highlight-color;
+  color: $highlight-color;
 }
 
-fieldset{
-    position: relative;
-    border: none;
+fieldset {
+  position: relative;
+  border: none;
 }
 
 legend {
-    position: absolute;
-    top: 25px;
-    left: -7px;
-    width: 24px;
-    height: 24px;
-    word-break: break-all;
-    background-color: $highlight-color;
-    text-align: center;
-    border-radius: 15px;
-    color: white;
-    font-family: Roboto;
-    font-size: 14.182px;
-    font-weight: 500;
-    @include centered-flex;
+  position: absolute;
+  top: 25px;
+  left: -7px;
+  width: 24px;
+  height: 24px;
+  word-break: break-all;
+  background-color: $highlight-color;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-weight: 500;
+  @include centered-flex;
 }
 
 // SECTION RESTAURANT
 .restaurant {
-    width: 100%;
+  width: 100%;
 }
 
 .restaurant-title {
-    padding: 25px 0px 25px 22px;
+  padding: 25px 0px 25px 22px;
 }
 
 .restaurant-title,
 .restaurant-card-container {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 
 .restaurant-card-container {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .restaurant-card {
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; // for heart icon to not overflow
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; // for heart icon to not overflow
 }
 
 .new-sticker {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 30px;
-    width: 80px;
-    @include centered-flex;
-    background-color: #99E2D0;
-    color: #008766;
-    border-radius: 5px;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 30px;
+  width: 80px;
+  @include centered-flex;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .restaurant-card-img {
-    height: 175px;
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
+  height: 175px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 
 .card-content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 13px;
-    height: 25px;
-    margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 13px;
+  height: 25px;
+  margin-top: 15px;
 }
 
 .card-subcontent {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    color: #000;
-    font-family: Roboto;
-    font-size: 17px;
-    font-weight: lighter
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: lighter;
 }
 
 // HEART POSITION
 .homepage-heart {
-    //POSITIONING
-    position: relative;
-    font-size: 22px;
-    left: 90%;
-    bottom: 20px;
+  //POSITIONING
+  position: relative;
+  font-size: 22px;
+  left: 90%;
+  bottom: 20px;
 
-    // STYLING
-    font-weight: 100;
-    background-color: white;
+  // STYLING
+  font-weight: 100;
+  background-color: white;
 }
 
 // SECONDARY PAGES //
 
-.secondary-page-main { //trying to have img overlap main div section
-    position: relative;
-    width: 100%;
-    background-color: $secondary-color;
+.secondary-page-main {
+  //trying to have img overlap main div section
+  position: relative;
+  width: 100%;
+  background-color: $secondary-color;
 }
 
 .restaurant-title-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 i.secondary-page-heart {
-    border: none;
-    height: 22px;
-    width: 22px;
-    font-size: 22px;
-    background-color: $secondary-color;
+  border: none;
+  height: 22px;
+  width: 22px;
+  font-size: 22px;
+  background-color: $secondary-color;
 }
 
 .top-image {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .restaurant-title-div {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 
 .restaurant-dish-title {
-    color: var(--Black, #101010);
-    @include logo-typo;
+  color: var(--Black, #101010);
+  @include logo-typo;
 }
 
 .restaurant-dish-title {
-    font-size: 28px;
-    background-color: $secondary-color;
+  font-size: 28px;
+  background-color: $secondary-color;
 }
 
 .restaurant-dish-list {
-    margin-top: 60px;
-    padding-right: 22px;
-    padding-left: 22px;
-    background-color: $secondary-color;
-    overflow: hidden;
+  margin-top: 60px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: $secondary-color;
+  overflow: hidden;
 }
 
 .dish-cards {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 
 .fonctionnement-card-content.sec {
-    margin-left: 10px;
-    overflow: hidden;
+  margin-left: 10px;
+  overflow: hidden;
 }
 
 .dish-category {
-    margin-top: 25px;
-    margin-bottom: 12px;
-    background-color: $secondary-color;
-    color: #000;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 100;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  background-color: $secondary-color;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 100;
 }
 
 .green-bar {
-    height: 5px;
-    width: 20%;
-    background-color: #99E2D0;
-    margin-bottom: 25px;
-
+  height: 5px;
+  width: 20%;
+  background-color: #99e2d0;
+  margin-bottom: 25px;
 }
 
 .restaurant-dish {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: $secondary-color;
-    position: relative;
-    top: -25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: $secondary-color;
+  position: relative;
+  top: -25px;
 }
 
 .dish1,
 .dish2,
 .dish3 {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 16px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    margin-bottom: 25px;
-    height: 80px;
-    background-color: $primary-color;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  height: 80px;
+  background-color: $primary-color;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .dish-card-content,
 .dish-name,
 .dish-card-subcontent,
 .dish-price {
-    background-color: $primary-color;
-    overflow: hidden;
+  background-color: $primary-color;
+  overflow: hidden;
 }
 
 .dish-card-content {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 // TODO check text div overlaps from card and check spacing between price and dish subcontent
 
 .dish-name {
-    color: #353535;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 700;
+  color: #353535;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .dish-spec {
-    color: #000;
-    font-family: Roboto;
-    font-size: 15.043px;
-    font-weight: 300;
+  color: #000;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-weight: 300;
 }
 
 .dish-card-subcontent {
-    width: 70vw;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; // think with this proprety is the best solution
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; // think with this proprety is the best solution
 }
 
 .dish-price {
-    color: #353535;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 15.043px;
-    font-weight: 700;
-    // POSITIONING
-    // position: absolute;
-    // width: 10%;
-    margin-right: 35px;
+  color: #353535;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-weight: 700;
+  // POSITIONING
+  // position: absolute;
+  // width: 10%;
+  margin-right: 35px;
 }
 
 .btn-container {
-    @include centered-flex;
-    background-color: $secondary-color;
-    margin-top: 25px;
+  @include centered-flex;
+  background-color: $secondary-color;
+  margin-top: 25px;
 }
 
 .pink-button.secondary-button {
-    margin-bottom: 35px;
-    margin-top: -5px;
-    @include centered-flex;
-    width: 50%;
+  margin-bottom: 35px;
+  margin-top: -5px;
+  @include centered-flex;
+  width: 50%;
 }
 
 // TODO mettre propriete pour que le footer soit positition fixer en bas de page
 // FOOTER
 footer {
-    padding: 25px 35px;
-    gap: 16px;
-    background-color: #353535;
-    width: 100%;
-    color: var(--White, #FFF);
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 0px;
+  padding: 25px 35px;
+  gap: 16px;
+  background-color: #353535;
+  width: 100%;
+  color: var(--White, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0px;
 }
 
 .footer-title {
-    @include logo-typo;
-    color: white;
-    background-color: #353535;
+  @include logo-typo;
+  color: white;
+  background-color: #353535;
 }
 
 .footer-links {
-    background-color: #353535;    
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .with-icon {
-    padding-left: 10px;
-    background-color: #353535;
+  padding-left: 10px;
+  background-color: #353535;
 }
 
 .footer-link {
-    color: white;
-    background-color: #353535;
+  color: white;
+  background-color: #353535;
 }
 
 .icon-div-footer {
-    background-color: #353535;
+  background-color: #353535;
 }
 .fa-utensils,
 .fa-handshake-angle {
-    color: white;
-    background-color: #353535;
-    width: 16px;
+  color: white;
+  background-color: #353535;
+  width: 16px;
 }
 
 .fa-circle-check {
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    z-index: 2;
-    background-color: #99E2D0;
-    height: 22px;
-    width: 22px;
-    margin-right: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  z-index: 2;
+  background-color: #99e2d0;
+  height: 22px;
+  width: 22px;
+  margin-right: 20px;
 }
 
-//desktop and tablette 421px to 1440px
-@media (min-width: 768px) and (max-width: 2800px) {
+//desktop and tablette
+@media (min-width: 768px) {
+  // LANDING PAGE and GENERAL
 
-    // LANDING PAGE and GENERAL
+  * {
+    
+  }
 
-    * {
-    max-width: 2800px;
-    }
+  body {
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
 
-    body {
-        justify-content: center;
-        margin: auto;
-        width: 100%;
-    }
-
-    .header-logo-div {
-        width: 100%;
-        background-color: white;
-    }
-
-    .pink-button {
-        width: 20%;
-    }
-
-    .fonctionnement-title {
-        margin-left: 30px;
-    }
-
-    .fonctionnement-cards {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .fonctionnement1,
-    .fonctionnement2,
-    .fonctionnement3 {
-        width: 30%;
-    }
-
-    .restaurant-title {
-        padding-left: 50px;
-    }
-
-    .restaurant-card-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-
-    .restaurant-card {
-        width: 575px;
-    }
-
-// SECONDARY PAGES
-
-
-.secondary-page-main.main-container {
+  .header-logo-div {
+    width: 100%;
     background-color: white;
-}
+  }
 
-.main-sections.restaurant-dish {
+  .pink-button {
+    width: 20%;
+  }
+
+  .fonctionnement-title {
+    margin-left: 30px;
+  }
+
+  .fonctionnement-cards {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .fonctionnement1,
+  .fonctionnement2,
+  .fonctionnement3 {
+    width: 30%;
+  }
+
+  .restaurant-title {
+    padding-left: 50px;
+  }
+
+  .restaurant-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .restaurant-card {
+    width: 500px;
+  }
+
+  // SECONDARY PAGES
+
+  .secondary-page-main.main-container {
+    background-color: white;
+  }
+
+  .main-sections.restaurant-dish {
     width: 80%;
     position: relative;
     top: 0px;
     margin-top: -25px;
-}
+  }
 
-.fonctionnement-cards.dish-cards {
+  .fonctionnement-cards.dish-cards {
     flex-direction: column;
-}
+  }
 
-.green-bar {
+  .green-bar {
     width: 40px;
-}
+  }
 
-.secondary-button {
+  .secondary-button {
     max-width: 185px;
-}
+  }
 
-.dish-card-subcontent {
+  .dish-card-subcontent {
     width: 55vw;
-}
+  }
 
-// FOOTER
+  // FOOTER
 
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-    }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-    .footer-links {
-        flex-direction: row;
-        margin-top: 15px;
-    }
+  .footer-links {
+    flex-direction: row;
+    margin-top: 15px;
+  }
 
-    .icon-div-footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
+  .icon-div-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 // ANIMATIONS
@@ -662,15 +658,15 @@ footer {
 #toggle-heart2,
 #toggle-heart3,
 #toggle-heart4 {
-    display: none;
-    // opacity: 0;
-    // width: 0;
-    // height: 0;
+  display: none;
+  // opacity: 0;
+  // width: 0;
+  // height: 0;
 }
 
 .secondary-page-heart,
 .homepage-heart {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 // HEART ANIMATION
@@ -683,12 +679,11 @@ footer {
 #toggle-heart3:checked + .secondary-page-heart,
 #toggle-heart4:checked + .homepage-heart,
 #toggle-heart4:checked + .secondary-page-heart {
-    background-image: url(../Assets/Status=Liked.svg);   
-    transition: 0.2s;
-    &:hover {
-		transform: scale(1.3);
-	}
-
+  background-image: url(../Assets/Status=Liked.svg);
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 
 #toggle-heart + .secondary-page-heart,
@@ -699,73 +694,73 @@ footer {
 #toggle-heart3 + .homepage-heart,
 #toggle-heart4 + .secondary-page-heart,
 #toggle-heart4 + .homepage-heart {
-    background-image: url(../Assets/Status=Default.svg);
-    &:hover {
-		transform: scale(1.3);
-	}
+  background-image: url(../Assets/Status=Default.svg);
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 
 i.homepage-heart {
-    background-color: white;
+  background-color: white;
 }
 
 .secondary-page-heart,
 .homepage-heart {
-    display: inline-block;
-    height: 22px;
-    width: 22px;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: contain;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
 }
 
 label {
-    background-color: white;
+  background-color: white;
 }
 
 .card-content-index {
-    z-index: 1;
-    max-width: 160px;
+  z-index: 1;
+  max-width: 160px;
 }
 
 svg,
 i {
-    z-index: 2;
+  z-index: 2;
 }
 
 .labelsecondary {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 
 // CARD ANIMATION
 
 .card-animation-div {
-    position: absolute;
-    right: -100%;
-    height : 100%;
-    width : 100%;
-    background: #99E2D0;
-    opacity: 1;
-    width:0;
-    background-image: url(../Assets/Select-button.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+  position: absolute;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #99e2d0;
+  opacity: 1;
+  width: 0;
+  background-image: url(../Assets/Select-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .dish1:hover .card-animation-div,
 .dish2:hover .card-animation-div,
 .dish3:hover .card-animation-div {
-    right: 0;
-    height: 120px;
-    width: 20%;
-    animation-name: cardanimation;
-    transition-duration: 1s;
-    z-index: 2;
+  right: 0;
+  height: 120px;
+  width: 20%;
+  animation-name: cardanimation;
+  transition-duration: 1s;
+  z-index: 2;
 }
 
 // @keyframes cardanimation {
-//   from { 
-//     opacity: 0; 
+//   from {
+//     opacity: 0;
 //   }
 //     10% {
 //     opacity: 0.1;
@@ -792,32 +787,35 @@ i {
 // }
 
 .fa-circle-check {
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    z-index: 2;
-    background-color: #99E2D0;
-    height: 22px;
-    width: 22px;
-    margin: 20px;
-    margin-top: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  z-index: 2;
+  background-color: #99e2d0;
+  height: 22px;
+  width: 22px;
+  margin: 20px;
+  margin-top: 50px;
 }
 
 // BUTTON ANIMATION
 
 .pink-button {
-    transition: 0.2s;
-    &:hover {
-		transform: scale(1.3);
-        background: var(--Button-Gradient, linear-gradient(0deg, #FF79DA -11.44%, #9356DC 123.93%));
-	}
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.3);
+    background: var(
+      --Button-Gradient,
+      linear-gradient(0deg, #ff79da -11.44%, #9356dc 123.93%)
+    );
+  }
 }
 
 // BACK ARROW ANIMATION
 
 .fa-arrow-left {
-    transition: 0.2s;
-    &:hover {
-        rotate: 360deg;
-		transform: scale(1.3);
-	}
+  transition: 0.2s;
+  &:hover {
+    rotate: 360deg;
+    transform: scale(1.3);
+  }
 }
