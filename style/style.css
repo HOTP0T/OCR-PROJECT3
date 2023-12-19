@@ -318,6 +318,34 @@ legend {
   background-color: white;
 }
 
+.entree-div,
+.plats-div,
+.desserts-div {
+  background-color: #f6f6f6;
+}
+
+.entree-div {
+  animation: fadeIn 1800ms;
+}
+
+.plats-div {
+  animation: fadeIn 6800ms;
+}
+
+.desserts-div {
+  animation: fadeIn 9800ms;
+}
+
+/**** sec page animation ****/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/**** sec page animation ****/
 .secondary-page-main {
   position: relative;
   width: 100%;
@@ -581,22 +609,6 @@ footer {
   .restaurant-card {
     width: 40%;
   }
-  .entree-div,
-  .plats-div,
-  .desserts-div {
-    background-color: #f6f6f6;
-    animation: fadeIn 3000ms;
-  }
-  /**** sec page animation ****/
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  /**** sec page animation ****/
   .restaurant-title-div {
     display: flex;
     justify-content: center;
