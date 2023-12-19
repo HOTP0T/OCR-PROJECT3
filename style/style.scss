@@ -581,6 +581,10 @@ footer {
   //   margin-left: 30px;
   // }
 
+  .main-sections {  
+
+  }
+
   .fonctionnement-cards {
     display: flex;
     justify-content: space-between;
@@ -592,13 +596,22 @@ footer {
     width: 30%;
   }
 
+  // .restaurant-bg-container {
+  //   width: 100%;
+  //   background-color: $secondary-color;
+  // }
+
   // .restaurant-title {
   //   padding-left: 50px;
   // }
 
+  section.restaurant {
+    min-width: 100%;
+    background-color: $secondary-color;
+  }
+
   .restaurant-card-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
@@ -608,6 +621,10 @@ footer {
   }
 
   // SECONDARY PAGES
+
+  .restaurant-title-div {
+    @include centered-flex;
+  }
 
   .secondary-page-main.main-container {
     background-color: white;

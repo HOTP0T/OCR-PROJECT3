@@ -568,14 +568,23 @@ footer {
   .fonctionnement3 {
     width: 30%;
   }
+  section.restaurant {
+    min-width: 100%;
+    background-color: #f6f6f6;
+  }
   .restaurant-card-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .restaurant-card {
     width: 40%;
+  }
+  .restaurant-title-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   .secondary-page-main.main-container {
     background-color: white;
