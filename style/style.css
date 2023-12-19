@@ -541,6 +541,7 @@ footer {
   margin-right: 20px;
 }
 
+/****** desktop and tablette *******/
 @media (min-width: 768px) {
   body {
     justify-content: center;
@@ -550,6 +551,7 @@ footer {
   .header-logo-div {
     width: 100%;
     background-color: white;
+    height: 96px;
   }
   .pink-button {
     width: 20%;
@@ -585,6 +587,7 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
+    gap: 24px;
   }
   .secondary-page-main.main-container {
     background-color: white;
@@ -604,8 +607,8 @@ footer {
   .secondary-button {
     max-width: 185px;
   }
-  .dish-card-subcontent {
-    width: 55vw;
+  .dish-price {
+    text-align: end;
   }
   footer {
     display: flex;

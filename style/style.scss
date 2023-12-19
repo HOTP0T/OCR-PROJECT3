@@ -552,7 +552,7 @@ footer {
   margin-right: 20px;
 }
 
-//desktop and tablette
+/****** desktop and tablette *******/
 @media (min-width: 768px) {
   // LANDING PAGE and GENERAL
 
@@ -565,6 +565,7 @@ footer {
   .header-logo-div {
     width: 100%;
     background-color: white;
+    height: 96px;
   }
 
   .pink-button {
@@ -581,9 +582,9 @@ footer {
   //   margin-left: 30px;
   // }
 
-  .main-sections {  
+  // .main-sections {  
 
-  }
+  // }
 
   .fonctionnement-cards {
     display: flex;
@@ -624,6 +625,7 @@ footer {
 
   .restaurant-title-div {
     @include centered-flex;
+    gap: 24px;
   }
 
   .secondary-page-main.main-container {
@@ -650,7 +652,14 @@ footer {
   }
 
   .dish-card-subcontent {
-    width: 55vw;
+    // width: 55vw;
+    // display: flex;
+    // flex-direction: row;
+    
+  }
+
+  .dish-price {
+    text-align: end;
   }
 
   // FOOTER
