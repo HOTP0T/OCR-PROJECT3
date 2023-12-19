@@ -551,7 +551,6 @@ footer {
   .header-logo-div {
     width: 100%;
     background-color: white;
-    height: 96px;
   }
   .pink-button {
     width: 20%;
@@ -729,7 +728,7 @@ i {
 .dish3:hover .card-animation-div {
   right: 0;
   height: 120px;
-  width: 20%;
+  width: 60px;
   animation-name: cardanimation;
   transition-duration: 1s;
   z-index: 2;
