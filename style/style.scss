@@ -622,6 +622,24 @@ footer {
 
   // SECONDARY PAGES
 
+  .entree-div,
+  .plats-div,
+  .desserts-div {
+    background-color: $secondary-color;
+    animation: fadeIn 3000ms;
+  }
+
+  /**** sec page animation ****/
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+
+  /**** sec page animation ****/
+
   .restaurant-title-div {
     @include centered-flex;
     gap: 24px;

@@ -581,6 +581,22 @@ footer {
   .restaurant-card {
     width: 40%;
   }
+  .entree-div,
+  .plats-div,
+  .desserts-div {
+    background-color: #f6f6f6;
+    animation: fadeIn 3000ms;
+  }
+  /**** sec page animation ****/
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /**** sec page animation ****/
   .restaurant-title-div {
     display: flex;
     justify-content: center;
