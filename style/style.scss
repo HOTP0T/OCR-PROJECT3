@@ -73,6 +73,64 @@ h2 {
   position: relative;
 }
 
+// LOADER && LOADER ANIMATION
+.loader-container {
+  @include centered-flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  animation: loader-show 1.5s ease-in-out forwards;
+}
+
+@keyframes loader-show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #050505;
+  border-color: #000000 transparent #000000 transparent;
+  animation: loader 1.2s linear infinite;
+  z-index: 3;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main-container,
+footer {
+  display: none;
+  animation: afterloader 1s forwards;
+}
+
+@keyframes afterloader {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
 // HEADER
 header {
   width: 100%;
