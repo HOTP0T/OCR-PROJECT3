@@ -324,6 +324,11 @@ legend {
   background-color: #f6f6f6;
 }
 
+.dish-name,
+.dish-spec {
+  text-overflow: ellipsis;
+}
+
 .entree-div {
   animation: fadeIn1 3000ms;
 }

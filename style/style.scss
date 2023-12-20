@@ -338,6 +338,11 @@ legend {
   background-color: $secondary-color;
 }
 
+.dish-name,
+.dish-spec {
+  text-overflow: ellipsis;
+}
+
 // TODO //
 // need adjust secondary page opacity animation so appears smoother and one by one
 
