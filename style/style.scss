@@ -342,20 +342,34 @@ legend {
 // need adjust secondary page opacity animation so appears smoother and one by one
 
 .entree-div {
-  animation: fadeIn 1800ms;
+  animation: fadeIn1 3000ms;
 }
 
 .plats-div {
-  animation: fadeIn 6800ms;
+  animation: fadeIn2 3000ms forwards;
+  animation-delay: 1500ms;
+  opacity: 0;
 }
 
 .desserts-div {
-  animation: fadeIn 9800ms;
+  animation: fadeIn3 3000ms forwards;
+  animation-delay: 3s;
+  opacity: 0;
 }
 
 /**** sec page animation ****/
 
-@keyframes fadeIn {
+@keyframes fadeIn1 {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn2 {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn3 {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
