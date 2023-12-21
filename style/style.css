@@ -3,7 +3,6 @@
 * {
   background-color: rgb(255, 255, 255);
   box-sizing: border-box;
-  max-width: 768px;
 }
 
 body {
@@ -309,15 +308,11 @@ legend {
   background-color: #f6f6f6;
 }
 
-.restaurant-card-container {
-  padding-bottom: 50px;
-}
-
 .restaurant-card {
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding-bottom: 10px;
   position: relative;
   display: flex;
@@ -561,10 +556,10 @@ i.secondary-page-heart {
 }
 
 .dish-card-subcontent {
-  width: 70vw;
+  width: 94vw;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .dish-price {
@@ -659,7 +654,7 @@ footer {
     justify-content: center;
     margin: auto;
     width: 100%;
-    min-width: 769px;
+    min-width: 768px;
   }
   .header-logo-div {
     width: 100%;
@@ -718,6 +713,17 @@ footer {
   }
   .secondary-button {
     max-width: 185px;
+  }
+  .dish-card-subcontent {
+    width: 77vw;
+  }
+  .dish1:hover .dish-card-subcontent,
+  .dish2:hover .dish-card-subcontent,
+  .dish3:hover .dish-card-subcontent {
+    width: 67vw;
+    animation-name: cardanimation;
+    transition-duration: 1s;
+    animation-delay: 2s;
   }
   .dish-price {
     text-align: end;
@@ -845,6 +851,15 @@ i {
   animation-name: cardanimation;
   transition-duration: 1s;
   z-index: 2;
+}
+
+.dish1:hover .dish-card-subcontent,
+.dish2:hover .dish-card-subcontent,
+.dish3:hover .dish-card-subcontent {
+  width: 80vw;
+  animation-name: cardanimation;
+  transition-duration: 1s;
+  animation-delay: 2s;
 }
 
 .fa-circle-check {

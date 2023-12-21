@@ -27,7 +27,6 @@ $highlight-color: #9356dc;
 * {
   background-color: $primary-color;
   box-sizing: border-box;
-  max-width: 768px;
 }
 
 body {
@@ -321,15 +320,15 @@ legend {
   background-color: $secondary-color;
 }
 
-.restaurant-card-container {
-  padding-bottom: 50px;
-}
+// .restaurant-card-container {
+//   padding-bottom: 50px;
+// }
 
 .restaurant-card {
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding-bottom: 10px;
   position: relative;
   display: flex;
@@ -573,10 +572,10 @@ i.secondary-page-heart {
 }
 
 .dish-card-subcontent {
-  width: 70vw;
+  width: 94vw;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; // think with this proprety is the best solution
+  flex-wrap: nowrap; // think this proprety is the best solution
 }
 
 .dish-price {
@@ -670,7 +669,7 @@ footer {
     justify-content: center;
     margin: auto;
     width: 100%;
-    min-width: 769px;
+    min-width: 768px;
   }
 
   .header-logo-div {
@@ -762,13 +761,23 @@ footer {
   }
 
   .dish-card-subcontent {
-    // width: 55vw;
+    width: 77vw;
     // display: flex;
     // flex-direction: row;
   }
 
+  .dish1:hover .dish-card-subcontent,
+  .dish2:hover .dish-card-subcontent,
+  .dish3:hover .dish-card-subcontent {
+    width: 67vw;
+    animation-name: cardanimation;
+    transition-duration: 1s;
+    animation-delay: 2s;
+  }
+
   .dish-price {
     text-align: end;
+    
   }
 
   // FOOTER
@@ -887,13 +896,22 @@ i {
 
 .dish1:hover .card-animation-div,
 .dish2:hover .card-animation-div,
-.dish3:hover .card-animation-div {
+.dish3:hover .card-animation-div, {
   right: 0;
   height: 120px;
   width: 60px;
   animation-name: cardanimation;
   transition-duration: 1s;
   z-index: 2;
+}
+
+.dish1:hover .dish-card-subcontent,
+.dish2:hover .dish-card-subcontent,
+.dish3:hover .dish-card-subcontent {
+  width: 80vw;
+  animation-name: cardanimation;
+  transition-duration: 1s;
+  animation-delay: 2s;
 }
 
 // @keyframes cardanimation {
