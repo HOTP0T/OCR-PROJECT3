@@ -80,7 +80,7 @@ h2 {
   height: 100vh;
   width: 100%;
   background-color: white;
-  animation: loader-show 1.5s ease-in-out forwards;
+  animation: loader-show 1.2s ease-in-out forwards;
 }
 
 @keyframes loader-show {
@@ -89,6 +89,7 @@ h2 {
   }
   100% {
     opacity: 0;
+    height: 0px;
   }
 }
 
@@ -102,7 +103,6 @@ h2 {
   border: 6px solid #050505;
   border-color: #000000 transparent #000000 transparent;
   animation: loader 1.2s linear infinite;
-  z-index: 3;
 }
 
 @keyframes loader {
@@ -116,18 +116,20 @@ h2 {
 
 .main-container,
 footer {
-  display: none;
-  animation: afterloader 1s forwards;
+  visibility: hidden;
+  height: 0px;
+  animation: afterLoader 1s forwards;
+  animation-delay: 1s;
 }
 
-@keyframes afterloader {
+@keyframes afterLoader {
   0% {
-    opacity: 0;
-    display: none;
+    visibility: hidden;
+    height: 0px;
   }
   100% {
-    opacity: 1;
-    display: block;
+    visibility: visible;
+    height: auto;
   }
 }
 
