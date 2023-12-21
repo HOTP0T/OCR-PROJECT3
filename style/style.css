@@ -3,7 +3,7 @@
 * {
   background-color: rgb(255, 255, 255);
   box-sizing: border-box;
-  max-widh: 768px;
+  max-width: 768px;
 }
 
 body {
@@ -659,6 +659,7 @@ footer {
     justify-content: center;
     margin: auto;
     width: 100%;
+    min-width: 769px;
   }
   .header-logo-div {
     width: 100%;

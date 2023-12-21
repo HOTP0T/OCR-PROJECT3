@@ -27,7 +27,7 @@ $highlight-color: #9356dc;
 * {
   background-color: $primary-color;
   box-sizing: border-box;
-  max-widh: 768px;
+  max-width: 768px;
 }
 
 body {
@@ -616,6 +616,7 @@ footer {
   font-size: 16px;
   font-weight: 500;
   margin-top: 0px;
+  // box-shadow: 0 50vh 0 50vh #000;
 }
 
 .footer-title {
@@ -669,6 +670,7 @@ footer {
     justify-content: center;
     margin: auto;
     width: 100%;
+    min-width: 769px;
   }
 
   .header-logo-div {
