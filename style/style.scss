@@ -25,12 +25,13 @@ $highlight-color: #9356dc;
 
 /* GENERAL */
 * {
-  background-color: $primary-color;
   box-sizing: border-box;
+  text-overflow: ellipsis;
 }
 
 body {
   width: 100%;
+  background-color: $primary-color;
 }
 
 .main-container {
@@ -157,6 +158,7 @@ header {
   @include centered-flex;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   height: 63px;
+  background-color: white;
 }
 
 .header-logo-link {
@@ -206,7 +208,7 @@ header {
   width: 100%;
   @include centered-flex;
   flex-direction: column;
-  padding: 30px 0px;
+  padding: 50px 0px;
 }
 
 .pink-button {
@@ -236,6 +238,7 @@ header {
 // main section
 .main-sections {
   width: 100%;
+  background-color: $secondary-color;
 }
 
 /* FONCTIONNEMENT */
@@ -248,9 +251,12 @@ header {
 }
 
 .fonctionnement {
-  margin-top: 60px;
+
   padding-right: 22px;
   padding-left: 22px;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .fonctionnement1,
@@ -325,6 +331,7 @@ legend {
 // }
 
 .restaurant-card {
+  background-color: $primary-color;
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -400,6 +407,8 @@ legend {
 .dish-name,
 .dish-spec {
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 // TODO //
@@ -471,6 +480,8 @@ i.secondary-page-heart {
 
 .restaurant-title-div {
   background-color: $secondary-color;
+  // display: flex;
+  // flex-wrap: nowrap;
 }
 
 .restaurant-dish-title {
@@ -553,6 +564,8 @@ i.secondary-page-heart {
 .dish-card-content {
   position: relative;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 // TODO check text div overlaps from card and check spacing between price and dish subcontent
@@ -727,7 +740,7 @@ footer {
   }
 
   .restaurant-card {
-    width: 40%;
+    width: 39%;
   }
 
   // SECONDARY PAGES
@@ -777,7 +790,6 @@ footer {
 
   .dish-price {
     text-align: end;
-    
   }
 
   // FOOTER
@@ -868,6 +880,8 @@ label {
 .card-content-index {
   z-index: 1;
   max-width: 160px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 svg,
@@ -977,4 +991,3 @@ i {
     transform: scale(1.3);
   }
 }
-

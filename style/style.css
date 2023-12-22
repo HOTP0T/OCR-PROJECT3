@@ -1,12 +1,13 @@
 /* utilisation des mixins et variables mais pas des imbrications sass */
 /* GENERAL */
 * {
-  background-color: rgb(255, 255, 255);
   box-sizing: border-box;
+  text-overflow: ellipsis;
 }
 
 body {
   width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-container {
@@ -138,6 +139,7 @@ header {
   align-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   height: 63px;
+  background-color: white;
 }
 
 .header-logo-link {
@@ -195,7 +197,7 @@ header {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  padding: 30px 0px;
+  padding: 50px 0px;
 }
 
 .pink-button {
@@ -222,6 +224,7 @@ header {
 
 .main-sections {
   width: 100%;
+  background-color: #f6f6f6;
 }
 
 /* FONCTIONNEMENT */
@@ -234,9 +237,11 @@ header {
 }
 
 .fonctionnement {
-  margin-top: 60px;
   padding-right: 22px;
   padding-left: 22px;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .fonctionnement1,
@@ -309,6 +314,7 @@ legend {
 }
 
 .restaurant-card {
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -381,6 +387,8 @@ legend {
 .dish-name,
 .dish-spec {
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .entree-div {
@@ -539,6 +547,8 @@ i.secondary-page-heart {
 .dish-card-content {
   position: relative;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .dish-name {
@@ -687,7 +697,7 @@ footer {
     flex-wrap: wrap;
   }
   .restaurant-card {
-    width: 40%;
+    width: 39%;
   }
   .restaurant-title-div {
     display: flex;
@@ -818,6 +828,8 @@ label {
 .card-content-index {
   z-index: 1;
   max-width: 160px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 svg,
