@@ -840,7 +840,7 @@ footer {
 #toggle-heart4:checked + .homepage-heart,
 #toggle-heart4:checked + .secondary-page-heart {
   background-image: url(../Assets/Status=Liked.svg);
-  transition: 1s;
+  transition-duration: 1s;
   &:hover {
     transform: scale(1.3);
     transition: all 1s;
@@ -914,7 +914,7 @@ i {
 
 .dish1:hover .card-animation-div,
 .dish2:hover .card-animation-div,
-.dish3:hover .card-animation-div, {
+.dish3:hover .card-animation-div {
   right: 0;
   height: 120px;
   width: 60px;

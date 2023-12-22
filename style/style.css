@@ -773,7 +773,7 @@ footer {
 #toggle-heart4:checked + .homepage-heart,
 #toggle-heart4:checked + .secondary-page-heart {
   background-image: url(../Assets/Status=Liked.svg);
-  transition: 1s;
+  transition-duration: 1s;
 }
 #toggle-heart:checked + .homepage-heart:hover,
 #toggle-heart:checked + .secondary-page-heart:hover,
