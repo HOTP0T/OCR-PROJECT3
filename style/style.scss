@@ -204,6 +204,7 @@ header {
   text-align: center;
   background-color: $secondary-color;
 }
+
 .reservation-exploration {
   width: 100%;
   @include centered-flex;
@@ -783,7 +784,7 @@ footer {
   .dish2:hover .dish-card-subcontent,
   .dish3:hover .dish-card-subcontent {
     width: 67vw;
-    animation-name: cardanimation;
+    animation-name: cardAnimation;
     transition-duration: 1s;
     animation-delay: 2s;
   }
@@ -914,7 +915,7 @@ i {
   right: 0;
   height: 120px;
   width: 60px;
-  animation-name: cardanimation;
+  animation-name: cardAnimation;
   transition-duration: 1s;
   z-index: 2;
 }
@@ -922,13 +923,13 @@ i {
 .dish1:hover .dish-card-subcontent,
 .dish2:hover .dish-card-subcontent,
 .dish3:hover .dish-card-subcontent {
-  width: 80vw;
-  animation-name: cardanimation;
+  width: 70vw;
+  animation-name: cardAnimation;
   transition-duration: 1s;
   animation-delay: 2s;
 }
 
-// @keyframes cardanimation {
+// @keyframes cardAnimation {
 //   from {
 //     opacity: 0;
 //   }
