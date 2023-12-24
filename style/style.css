@@ -658,6 +658,15 @@ footer {
   margin-right: 20px;
 }
 
+.dish1:hover .dish-card-subcontent,
+.dish2:hover .dish-card-subcontent,
+.dish3:hover .dish-card-subcontent {
+  width: calc(100vw - 85px);
+  transition-duration: 1s;
+  animation-delay: 2s;
+  animation: checked 1000ms ease forwards;
+}
+
 /****** desktop and tablette *******/
 @media (min-width: 768px) {
   body {
@@ -726,14 +735,6 @@ footer {
   }
   .dish-card-subcontent {
     width: 77vw;
-  }
-  .dish1:hover .dish-card-subcontent,
-  .dish2:hover .dish-card-subcontent,
-  .dish3:hover .dish-card-subcontent {
-    width: 67vw;
-    animation-name: cardAnimation;
-    transition-duration: 1s;
-    animation-delay: 2s;
   }
   .dish-price {
     text-align: end;
@@ -865,15 +866,18 @@ i {
   animation-name: cardAnimation;
   transition-duration: 1s;
   z-index: 2;
+  animation-delay: 2s;
+  animation: checked 1000ms ease forwards;
 }
 
 .dish1:hover .dish-card-subcontent,
 .dish2:hover .dish-card-subcontent,
 .dish3:hover .dish-card-subcontent {
-  width: 70vw;
+  width: calc(100vw - 170px);
   animation-name: cardAnimation;
   transition-duration: 1s;
   animation-delay: 2s;
+  animation: checked 1000ms ease forwards;
 }
 
 .fa-circle-check {
