@@ -871,9 +871,26 @@ i {
 .dish1:hover .dish-price,
 .dish2:hover .dish-price,
 .dish3:hover .dish-price {
-  transform: translateX(-70px);
+  transform: translateX(-30px);
 }
 
+@media (max-width: 768px) {
+  .dish1:hover .dish-price,
+  .dish2:hover .dish-price,
+  .dish3:hover .dish-price {
+    transform: translateX(-50px);
+  }
+}
+@media (max-width: 500px) {
+  .dish1:hover .dish-price,
+  .dish2:hover .dish-price,
+  .dish3:hover .dish-price {
+    transform: translateX(-65px);
+  }
+  .dish-price {
+    text-overflow: clip;
+  }
+}
 .fa-circle-check {
   color: rgb(255, 255, 255);
   font-size: 22px;

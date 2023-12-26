@@ -697,6 +697,7 @@ footer {
 
 /****** desktop and tablette *******/
 @media (min-width: 768px) {
+  
   // LANDING PAGE and GENERAL
 
   body {
@@ -799,6 +800,7 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
 // FIXME
   // .dish1:hover .dish-card-subcontent,
   // .dish2:hover .dish-card-subcontent,
@@ -950,7 +952,7 @@ i {
 .dish1:hover .dish-card-subcontent,
 .dish2:hover .dish-card-subcontent,
 .dish3:hover .dish-card-subcontent {
-  
+
 }
 
 .dish-price {
@@ -960,7 +962,27 @@ i {
 .dish1:hover .dish-price,
 .dish2:hover .dish-price,
 .dish3:hover .dish-price {
-  transform: translateX(-70px);
+  transform: translateX(-30px);
+}
+
+@media (max-width: 768px) {
+  .dish1:hover .dish-price,
+.dish2:hover .dish-price,
+.dish3:hover .dish-price {
+  transform: translateX(-50px);
+}
+}
+
+@media (max-width: 500px) {
+  .dish1:hover .dish-price,
+.dish2:hover .dish-price,
+.dish3:hover .dish-price {
+  transform: translateX(-65px);
+}
+
+.dish-price {
+  text-overflow: clip;
+}
 }
 
 // FIXME 
