@@ -796,7 +796,7 @@ footer {
   }
 
   .dish-card-subcontent {
-    width: calc( 77vw - 60px);
+    width: calc( 77vw - 30px);
     display: flex;
     flex-direction: row;
   }
@@ -963,6 +963,14 @@ i {
 .dish2:hover .dish-price,
 .dish3:hover .dish-price {
   transform: translateX(-30px);
+}
+
+@media (min-width: 1440px) {
+.dish1:hover .dish-price,
+.dish2:hover .dish-price,
+.dish3:hover .dish-price {
+  transform: translateX(-50px);
+}
 }
 
 @media (max-width: 768px) {
