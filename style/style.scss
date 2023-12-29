@@ -595,6 +595,9 @@ i.secondary-page-heart {
   font-family: Roboto;
   font-size: 15.043px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .dish-card-subcontent {
