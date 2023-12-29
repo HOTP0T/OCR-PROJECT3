@@ -614,7 +614,7 @@ i.secondary-page-heart {
   // POSITIONING
   // position: absolute;
   // width: 10%;
-  margin-right: 35px;
+  margin-right: 45px;
 }
 
 .btn-container {
@@ -809,7 +809,7 @@ footer {
   }
 
   .dish-card-subcontent {
-    width: calc( 77vw - 30px);
+    width: calc( 77vw - 45px);
     display: flex;
     flex-direction: row;
   }
@@ -962,11 +962,11 @@ i {
   animation: checked 1000ms ease forwards;
 }
 
-.dish1:hover .dish-card-subcontent,
-.dish2:hover .dish-card-subcontent,
-.dish3:hover .dish-card-subcontent {
+// .dish1:hover .dish-card-subcontent,
+// .dish2:hover .dish-card-subcontent,
+// .dish3:hover .dish-card-subcontent {
 
-}
+// }
 
 .dish-price {
   transition: transform 1s ease-in-out;
@@ -975,8 +975,16 @@ i {
 .dish1:hover .dish-price,
 .dish2:hover .dish-price,
 .dish3:hover .dish-price {
-  transform: translateX(-30px);
+  transform: translateX(-65px);
 }
+
+@media (min-width: 1200px) {
+  .dish1:hover .dish-price,
+  .dish2:hover .dish-price,
+  .dish3:hover .dish-price {
+    transform: translateX(-50px);
+  }
+  }
 
 @media (min-width: 1440px) {
 .dish1:hover .dish-price,
