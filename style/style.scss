@@ -78,17 +78,28 @@ h2 {
   @include centered-flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: white;
   animation: loader-show 1.2s ease-in-out forwards;
+  animation: loader-height 0s 1.2s linear forwards;
 }
 
 @keyframes loader-show {
   0% {
-    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
   }
   100% {
-    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+  }
+}
+
+@keyframes loader-height {
+  0% {
+    height: 100vh;
+  }
+  100% {
     height: 0px;
   }
 }
@@ -129,8 +140,10 @@ footer {
   }
   100% {
     visibility: visible;
-    height: auto;
-  }
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
 }
 
 // HEADER
