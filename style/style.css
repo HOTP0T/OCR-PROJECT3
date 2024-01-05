@@ -279,7 +279,6 @@ header {
 
 span {
   margin-left: 25px;
-  background-color: #f6f6f6;
 }
 
 .fa-store {
@@ -593,6 +592,7 @@ i.secondary-page-heart {
   font-size: 15.043px;
   font-weight: 700;
   margin-right: 45px;
+  visibility: visible;
 }
 
 .btn-container {
@@ -886,6 +886,13 @@ i {
 .dish2:hover .dish-price,
 .dish3:hover .dish-price {
   transform: translateX(-65px);
+}
+
+.dish1:hover .dish-spec,
+.dish2:hover .dish-spec,
+.dish3:hover .dish-spec {
+  width: calc(100% - 150px);
+  transition: all 0.8s ease-in-out;
 }
 
 @media (min-width: 1200px) {

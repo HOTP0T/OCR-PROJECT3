@@ -142,7 +142,7 @@ footer {
     visibility: visible;
     height: 100%;
     top: 0;
-}
+  }
 }
 
 // HEADER
@@ -264,7 +264,6 @@ header {
 }
 
 .fonctionnement {
-
   padding-right: 22px;
   padding-left: 22px;
   background-color: white;
@@ -296,7 +295,7 @@ header {
 
 span {
   margin-left: 25px;
-  background-color: $secondary-color;
+  // background-color: $secondary-color;
 }
 
 .fa-store {
@@ -447,18 +446,30 @@ legend {
 /**** sec page animation ****/
 
 @keyframes fadeIn1 {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn2 {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn3 {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /**** sec page animation ****/
@@ -617,6 +628,7 @@ i.secondary-page-heart {
   // position: absolute;
   // width: 10%;
   margin-right: 45px;
+  visibility: visible;
 }
 
 .btn-container {
@@ -712,7 +724,6 @@ footer {
 
 /****** desktop and tablette *******/
 @media (min-width: 768px) {
-  
   // LANDING PAGE and GENERAL
 
   body {
@@ -741,7 +752,7 @@ footer {
   //   margin-left: 30px;
   // }
 
-  // .main-sections {  
+  // .main-sections {
 
   // }
 
@@ -811,12 +822,12 @@ footer {
   }
 
   .dish-card-subcontent {
-    width: calc( 77vw - 45px);
+    width: calc(77vw - 45px);
     display: flex;
     flex-direction: row;
   }
 
-// FIXME
+  // FIXME
   // .dish1:hover .dish-card-subcontent,
   // .dish2:hover .dish-card-subcontent,
   // .dish3:hover .dish-card-subcontent {
@@ -884,7 +895,6 @@ footer {
     transition: all 1s;
   }
 }
-
 
 #toggle-heart + .secondary-page-heart,
 #toggle-heart + .homepage-heart,
@@ -967,7 +977,7 @@ i {
 // .dish1:hover .dish-card-subcontent,
 // .dish2:hover .dish-card-subcontent,
 // .dish3:hover .dish-card-subcontent {
-
+//   width: auto;
 // }
 
 .dish-price {
@@ -980,53 +990,60 @@ i {
   transform: translateX(-65px);
 }
 
+.dish1:hover .dish-spec,
+.dish2:hover .dish-spec,
+.dish3:hover .dish-spec {
+  width: calc(100% - 150px);
+  transition: all 0.8s ease-in-out;
+}
+
 @media (min-width: 1200px) {
   .dish1:hover .dish-price,
   .dish2:hover .dish-price,
   .dish3:hover .dish-price {
     transform: translateX(-50px);
   }
-  }
+}
 
 @media (min-width: 1440px) {
-.dish1:hover .dish-price,
-.dish2:hover .dish-price,
-.dish3:hover .dish-price {
-  transform: translateX(-50px);
-}
+  .dish1:hover .dish-price,
+  .dish2:hover .dish-price,
+  .dish3:hover .dish-price {
+    transform: translateX(-50px);
+  }
 }
 
 @media (max-width: 768px) {
   .dish1:hover .dish-price,
-.dish2:hover .dish-price,
-.dish3:hover .dish-price {
-  transform: translateX(-50px);
-}
+  .dish2:hover .dish-price,
+  .dish3:hover .dish-price {
+    transform: translateX(-50px);
+  }
 }
 
 @media (max-width: 500px) {
   .dish1:hover .dish-price,
-.dish2:hover .dish-price,
-.dish3:hover .dish-price {
-  transform: translateX(-65px);
+  .dish2:hover .dish-price,
+  .dish3:hover .dish-price {
+    transform: translateX(-65px);
+  }
+
+  .dish-price {
+    text-overflow: clip;
+  }
 }
 
-.dish-price {
-  text-overflow: clip;
-}
-}
-
-// FIXME 
+// FIXME
 // .dish1:hover .dish-price,
 // .dish2:hover .dish-price,
 // .dish3:hover .dish-price {
 //   transform: translateX(-50px);
-  // width: calc(100vw - 30vw);
-  // transform: translateX(-2.1rem);
-  // animation-name: cardAnimation;
-  // transition-duration: 1s;
-  // animation-delay: 2s;
-  // animation: checked 1000ms ease forwards;
+// width: calc(100vw - 30vw);
+// transform: translateX(-2.1rem);
+// animation-name: cardAnimation;
+// transition-duration: 1s;
+// animation-delay: 2s;
+// animation: checked 1000ms ease forwards;
 // }
 
 // .dish1:hover .dish-card-subcontent,
@@ -1039,14 +1056,13 @@ i {
 //   animation: checked 1000ms ease forwards;
 // }
 
+// .dish1:hover .dish-card-spec,
+// .dish2:hover .dish-card-spec,
+// .dish3:hover .dish-card-spec,
 // .dish1:hover .dish-card-subcontent,
 // .dish2:hover .dish-card-subcontent,
 // .dish3:hover .dish-card-subcontent {
 //   width: 70vw;
-//   animation-name: cardAnimation;
-//   transition-duration: 1s;
-//   animation-delay: 2s;
-//   animation: checked 1000ms ease forwards;
 // }
 
 // @keyframes cardAnimation {
