@@ -872,14 +872,14 @@ i {
   height: 120px;
   width: 60px;
   animation-name: cardAnimation;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   z-index: 2;
-  animation-delay: 2s;
-  animation: checked 1000ms ease forwards;
+  animation-delay: 0s;
+  animation: checked 500ms ease forwards;
 }
 
 .dish-price {
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .dish1:hover .dish-price,
