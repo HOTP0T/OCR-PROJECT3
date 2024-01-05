@@ -1124,7 +1124,7 @@ i {
 .fa-arrow-left {
   transition: 0.2s;
   &:hover {
-    rotate: 360deg;
+    rotate: (360deg);
     transform: scale(1.3);
   }
 }
