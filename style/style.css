@@ -395,6 +395,7 @@ legend {
   background-color: #f6f6f6;
 }
 
+.dish-card-content,
 .dish-name,
 .dish-spec {
   text-overflow: ellipsis;
@@ -549,8 +550,7 @@ i.secondary-page-heart {
 
 .dish-card-content,
 .dish-name,
-.dish-card-subcontent,
-.dish-price {
+.dish-card-subcontent {
   background-color: rgb(255, 255, 255);
   overflow: hidden;
 }
