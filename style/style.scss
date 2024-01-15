@@ -967,11 +967,11 @@ i {
   height: 120px;
   width: 60px;
   animation-name: cardAnimation;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   z-index: 2;
   //trying stuff
   animation-delay: 0s;
-  animation: checked 500ms ease forwards;
+  animation: checked 200ms ease forwards;
 }
 
 // .dish1:hover .dish-card-subcontent,
@@ -981,8 +981,12 @@ i {
 // }
 
 .dish-price {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
+
+// .dish-spec {
+//   transition: width 10s ease-in-out;
+// }
 
 .dish-price {
   position: relative;
@@ -999,6 +1003,18 @@ i {
 .dish2:hover .dish-price,
 .dish3:hover .dish-price {
   transform: translateX(-65px);
+}
+
+.dish-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dish1:hover .dish-name,
+.dish2:hover .dish-name,
+.dish3:hover .dish-name {
+  width: calc(100% - 100px);
 }
 
 .dish1:hover .dish-spec,
