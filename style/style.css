@@ -972,13 +972,6 @@ i {
   transition: 0.2s;
 }
 .fa-arrow-left:hover {
-  rotate: 360deg;
-}
-
-.fa-arrow-left {
-  transition: 0.2s;
-}
-.fa-arrow-left:hover {
   transform: scale(1.3);
 }
 
