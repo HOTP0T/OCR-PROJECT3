@@ -984,6 +984,17 @@ i {
   transition: transform 0.5s ease-in-out;
 }
 
+.dish-price {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.dish-spec {
+  position: relative;
+  z-index: 1;
+}
+
 .dish1:hover .dish-price,
 .dish2:hover .dish-price,
 .dish3:hover .dish-price {
@@ -994,7 +1005,14 @@ i {
 .dish2:hover .dish-spec,
 .dish3:hover .dish-spec {
   width: calc(100% - 150px);
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out 10s;
+
+  // transition: all 0.8s ease-in-out;
+  // transition-property: all;
+  // transition-duration: 0.8s;
+  // transition-timing-function: ease-in-out;
+  // transition-delay: 1s;
+
 }
 
 @media (min-width: 1200px) {
