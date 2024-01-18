@@ -32,11 +32,15 @@ $highlight-color: #9356dc;
 body {
   width: 100%;
   background-color: $primary-color;
+
+  // ROVED HORIZONTAL SCROLLBAR ISSUE :
+  overflow-x: hidden;
 }
 
 .main-container {
   @include centered-flex;
   flex-direction: column;
+  width: 100%;
 }
 
 button {
